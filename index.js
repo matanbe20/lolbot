@@ -1,4 +1,4 @@
-const token = "token";
+const token = process.env.token;
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const { fetchChampion, getInventory } = require("./app");
