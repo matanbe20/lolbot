@@ -1,4 +1,4 @@
-const token = "OTI5NzY0NjM0NDIzMDk1Mjk2.YdsEyw.DIxQ0A8dM6RlWyzRbwCE6NOjpGs";
+const token = "token";
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const { fetchChampion, getInventory } = require("./app");
