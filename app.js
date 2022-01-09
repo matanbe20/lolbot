@@ -2,7 +2,7 @@ const redis = require("redis");
 const redisClient = redis.createClient({
   port: 11411,
   host: "redis-11411.c267.us-east-1-4.ec2.cloud.redislabs.com",
-  password: "GxIQjinpsjKXZbsUilnefR0p9YNOtJoF",
+  password: "password",
 });
 const { promisify } = require("util");
 const { fetchChampions } = require("./repository");
