@@ -9,26 +9,30 @@ const { fetchChampions } = require("./repository");
 const { parseMillisecondsIntoReadableTime } = require("./utils");
 const getAsync = promisify(redisClient.get).bind(redisClient);
 const USERS_LIST = "users";
-const WAIT_TIME = 1000 * 60 * 60 * 3;
+const WAIT_TIME = 1000 * 60 * 60 * 2;
 
-const getUserData = async (userName, usersList = []) => {
+const getUserData = async (userName, usersList = {}) => {
   if (usersList && usersList[userName]) {
     return usersList[userName];
   } else {
-    await setData(USERS_LIST, {
+    const usersEnhanced = {
       ...usersList,
       [userName]: {
         inventory: [],
       },
-    });
+    };
+    await setData(USERS_LIST, usersEnhanced);
+    return usersEnhanced[userName];
   }
-  return usersList[userName];
 };
 
 const fetchChampion = async (userName) => {
-  const usersList = JSON.parse(await getAsync(USERS_LIST)) || [];
-  const userData = await getUserData(userName, usersList);
-  if (new Date(userData.lastRequestDate).getTime() > Date.now() - WAIT_TIME) {
+  const usersList = JSON.parse(await getAsync(USERS_LIST)) || {};
+  const userData = (await getUserData(userName, usersList)) || {};
+  if (
+    userData &&
+    new Date(userData.lastRequestDate).getTime() > Date.now() - WAIT_TIME
+  ) {
     return {
       isAllowed: false,
       reason:
