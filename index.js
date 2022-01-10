@@ -19,9 +19,9 @@ client.on("message", async (msg) => {
         embed.setDescription(reason)
         .setColor("#ff0000");
       }else{
-        const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion}_0.jpg`;
+        const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.replace(/\./g,"")}_0.jpg`;
         embed.setDescription(
-          `Nice, **${msg.author.username}** ! You've caught [**${champion}**](https://lol.gamepedia.com/${champion})`
+          `Nice, **${msg.author.username}** ! You've caught [**${champion}**](https://lol.gamepedia.com/${champion.replace(/\./g,"")})`
         );
         embed.color = 0x00ff00;
         console.log(loadingSplashUrl);
