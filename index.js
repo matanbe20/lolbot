@@ -2,6 +2,10 @@ const token = process.env.token;
 const { Client, Intents, MessageEmbed } = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const { fetchChampion, getInventory } = require("./app");
+const COMMANDS = {
+  CHAMPION: new Set(["!champion", "!champ", "!c"]),
+  INVENTORY: new Set(["!inventory", "!inv", "!i"]),
+};
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -9,27 +13,20 @@ client.on("ready", () => {
 
 client.on("message", async (msg) => {
   if (msg.author.username !== "lolbot") {
-    if (
-      msg.content === "!champion" ||
-      msg.content === "!c" ||
-      msg.content === "!champ"
-    ) {
+    if (COMMANDS.CHAMPION.has(msg.content)) {
       const result = await fetchChampion(msg.author.username);
-      const { champion, level, isAllowed, reason } = result;
+      const { name, level, isAllowed, reason, id } = result;
       const embed = new MessageEmbed();
 
       if (!isAllowed) {
         embed.setDescription(reason).setColor("#ff0000");
         console.log(reason);
       } else {
-        const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champion.replace(
-          /\./g,
-          ""
-        )}_0.jpg`;
+        const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`;
         embed.setDescription(
           `Nice, **${
             msg.author.username
-          }** ! You've caught [**${champion}**](https://lol.gamepedia.com/${champion.replace(
+          }** ! You've caught [**${name}**](https://lol.gamepedia.com/${name.replace(
             /\./g,
             ""
           )})`
@@ -39,18 +36,20 @@ client.on("message", async (msg) => {
         embed.setImage(loadingSplashUrl);
         embed.setFooter(`Level ${level}`);
         console.log(
-          msg.author.username + "has requested a champion, he got " + champion
+          msg.author.username + " has requested a champion, he got " + name
         );
       }
       return msg.reply(embed);
     }
-    if (msg.content === "!inventory" || msg.content === "!i") {
+    if (COMMANDS.INVENTORY.has(msg.content)) {
       const invetoryList = await getInventory(msg.author.username);
 
       const embed = new MessageEmbed();
       embed.color = 0x00ff00;
       embed.setDescription(
-        `Your inventory: (Total ${invetoryList.split("\n").length} Champions)` +
+        `Hey **${msg.author.username}**, here's your inventory: (Total ${
+          invetoryList.split("\n").length
+        } Champions)` +
           "\n" +
           invetoryList
       );

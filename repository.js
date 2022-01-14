@@ -16,8 +16,7 @@ const fetchChampions = async () => {
   });
 
   const randomChampIndex = randomInteger(0, championsArray.length - 1);
-  console.log(championsArray[randomChampIndex].name);
-  return championsArray[randomChampIndex].name;
+  return championsArray[randomChampIndex];
 };
 
 module.exports = { fetchChampions };

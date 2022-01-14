@@ -9,7 +9,8 @@ const { fetchChampions } = require("./repository");
 const { parseMillisecondsIntoReadableTime } = require("./utils");
 const getAsync = promisify(redisClient.get).bind(redisClient);
 const USERS_LIST = "users";
-const WAIT_TIME = 1000 * 60 * 60 * 2;
+// const WAIT_TIME = 1000 * 60 * 60 * 3;
+const WAIT_TIME = 1000 * 60 * 60 * 0;
 
 const getUserData = async (userName, usersList = {}) => {
   if (usersList && usersList[userName]) {
@@ -44,12 +45,12 @@ const fetchChampion = async (userName) => {
         " before requesting a new champion",
     };
   }
-  let champion = await fetchChampions();
-  champion = champion.replace(/\s/g, "");
-  let championIndex = findChampionIndex(champion, userData.inventory);
+  let {name, id} = await fetchChampions();
+  const championName = name.replace(/\s/g, "");
+  let championIndex = findChampionIndex(championName, userData.inventory);
   if (championIndex === -1) {
     userData.inventory.push({
-      name: champion,
+      name: championName,
       level: 1,
     });
   } else {
@@ -62,7 +63,8 @@ const fetchChampion = async (userName) => {
   });
   return {
     isAllowed: true,
-    champion,
+    name,
+    id,
     level: championIndex === -1 ? 1 : userData.inventory[championIndex].level,
   };
 };
