@@ -14,7 +14,9 @@ client.on("ready", () => {
 client.on("message", async (msg) => {
   if (msg.author.username !== "lolbot") {
     if (COMMANDS.CHAMPION.has(msg.content)) {
-      const result = await fetchChampion(msg.author.username);
+      let user = msg.mentions.users.first() || msg.author;
+      let avatar = user.displayAvatarURL({ size: 1024, dynamic: true });
+      const result = await fetchChampion(msg.author.username, avatar);
       const { name, level, isAllowed, reason, id } = result;
       const embed = new MessageEmbed();
 
@@ -29,7 +31,7 @@ client.on("message", async (msg) => {
           }** ! You've caught [**${name}**](https://lol.gamepedia.com/${name.replace(
             /\./g,
             ""
-          )}) \n [Inventory](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})`
+          )})`
         );
         embed.color = 0x00ff00;
         console.log(loadingSplashUrl);
@@ -43,15 +45,14 @@ client.on("message", async (msg) => {
     }
     if (COMMANDS.INVENTORY.has(msg.content)) {
       const invetoryList = await getInventory(msg.author.username);
-
       const embed = new MessageEmbed();
       embed.color = 0x00ff00;
       embed.setDescription(
         `Hey **${msg.author.username}**, here's your inventory: (Total ${
           invetoryList.split("\n").length
-        } Champions) [Inventory](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})` +
+        } Champions)` +
           "\n" +
-          invetoryList
+          `[**Inventory**](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})`
       );
       console.log(
         msg.author.username +

@@ -26,7 +26,7 @@ const getUserData = async (userName, usersList = {}) => {
   }
 };
 
-const fetchChampion = async (userName) => {
+const fetchChampion = async (userName, avatar) => {
   const usersList = JSON.parse(await getAsync(USERS_LIST)) || {};
   const userData = (await getUserData(userName, usersList)) || {};
   if (
@@ -44,7 +44,7 @@ const fetchChampion = async (userName) => {
         " before requesting a new champion",
     };
   }
-  let {name, id} = await fetchChampions();
+  let { name, id } = await fetchChampions();
   const championName = name.replace(/\s/g, "");
   let championIndex = findChampionIndex(championName, userData.inventory);
   if (championIndex === -1) {
@@ -57,6 +57,7 @@ const fetchChampion = async (userName) => {
     userData.inventory[championIndex].level += 1;
   }
   userData.lastRequestDate = new Date();
+  userData.avatarUrl = avatar;
   await setData(USERS_LIST, {
     ...usersList,
     [userName]: userData,
