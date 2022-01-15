@@ -29,7 +29,7 @@ client.on("message", async (msg) => {
           }** ! You've caught [**${name}**](https://lol.gamepedia.com/${name.replace(
             /\./g,
             ""
-          )})`
+          )}) \n [Inventory](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})`
         );
         embed.color = 0x00ff00;
         console.log(loadingSplashUrl);
@@ -49,7 +49,7 @@ client.on("message", async (msg) => {
       embed.setDescription(
         `Hey **${msg.author.username}**, here's your inventory: (Total ${
           invetoryList.split("\n").length
-        } Champions)` +
+        } Champions) [Inventory](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})` +
           "\n" +
           invetoryList
       );
