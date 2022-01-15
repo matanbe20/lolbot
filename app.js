@@ -9,8 +9,7 @@ const { fetchChampions } = require("./repository");
 const { parseMillisecondsIntoReadableTime } = require("./utils");
 const getAsync = promisify(redisClient.get).bind(redisClient);
 const USERS_LIST = "users";
-// const WAIT_TIME = 1000 * 60 * 60 * 3;
-const WAIT_TIME = 1000 * 60 * 60 * 0;
+const WAIT_TIME = 1000 * 60 * 60 * 3;
 
 const getUserData = async (userName, usersList = {}) => {
   if (usersList && usersList[userName]) {
@@ -51,6 +50,7 @@ const fetchChampion = async (userName) => {
   if (championIndex === -1) {
     userData.inventory.push({
       name: championName,
+      id,
       level: 1,
     });
   } else {
