@@ -28,10 +28,7 @@ client.on("message", async (msg) => {
         embed.setDescription(
           `Nice, **${
             msg.author.username
-          }** ! You've caught [**${name}**](https://lol.gamepedia.com/${name.replace(
-            /\./g,
-            ""
-          )})`
+          }** ! You've caught [**${name}**](https://lol.gamepedia.com/${encodeURI(name)})`
         );
         embed.color = 0x00ff00;
         console.log(loadingSplashUrl);
@@ -52,7 +49,7 @@ client.on("message", async (msg) => {
           invetoryList.split("\n").length
         } Champions)` +
         "\n" +
-        `[**Inventory**](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})`
+        `[**Inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)})`
       );
       console.log(
         msg.author.username +
