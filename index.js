@@ -3,7 +3,7 @@ const { Client, Intents, MessageEmbed } = require("discord.js");
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const { fetchChampion, getInventory } = require("./app");
 const COMMANDS = {
-  CHAMPION: new Set(["!champion", "!champ", "!c"]),
+  CHAMPION: new Set(["!champion", "!champ", "!c", '!C', '!ב']),
   INVENTORY: new Set(["!inventory", "!inv", "!i"]),
 };
 
@@ -51,14 +51,14 @@ client.on("message", async (msg) => {
         `Hey **${msg.author.username}**, here's your inventory: (Total ${
           invetoryList.split("\n").length
         } Champions)` +
-          "\n" +
-          `[**Inventory**](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})`
+        "\n" +
+        `[**Inventory**](https://lolbotviewer.vercel.app/inventory?user=${msg.author.username})`
       );
       console.log(
         msg.author.username +
-          " has requeted his inventory, he has " +
-          invetoryList.split("\n").length +
-          " champions"
+        " has requeted his inventory, he has " +
+        invetoryList.split("\n").length +
+        " champions"
       );
       return msg.reply(embed);
     }
