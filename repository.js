@@ -3,7 +3,7 @@ const { randomInteger } = require('./utils');
 
 const fetchChampions = async () => {
   const res = await fetch(
-    "http://ddragon.leagueoflegends.com/cdn/12.1.1/data/en_US/champion.json"
+    "http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json"
   );
   const result = await res.json();
   const champions = result.data;
