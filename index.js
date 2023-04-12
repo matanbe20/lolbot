@@ -12,54 +12,60 @@ client.on("ready", () => {
 });
 
 client.on("message", async (msg) => {
-  if (msg.author.username !== "lolbot") {
-    if (COMMANDS.CHAMPION.has(msg.content)) {
-      let user = msg.mentions.users.first() || msg.author;
-      let avatar = user.displayAvatarURL({ size: 1024, dynamic: true });
-      const result = await fetchChampion(msg.author.username, avatar);
-      const { name, level, isAllowed, reason, id } = result;
-      const embed = new MessageEmbed();
+  try {
+    if (msg.author.username !== "lolbot") {
+      if (COMMANDS.CHAMPION.has(msg.content)) {
+        let user = msg.mentions.users.first() || msg.author;
+        let avatar = user.displayAvatarURL({ size: 1024, dynamic: true });
+        const result = await fetchChampion(msg.author.username, avatar);
+        const { name, level, isAllowed, reason, id } = result;
+        const embed = new MessageEmbed();
 
-      if (!isAllowed) {
-        embed.setDescription(reason).setColor("#ff0000");
-        console.log(reason);
-      } else {
-        const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`;
-        embed.setDescription(
-          `Nice, **${
-            msg.author.username
-          }** ! You've caught [**${name}**](https://lol.gamepedia.com/${encodeURI(name)})`
-        );
-        embed.color = 0x00ff00;
-        console.log(loadingSplashUrl);
-        embed.setImage(loadingSplashUrl);
-        embed.setFooter(`Level ${level}`);
-        console.log(
-          msg.author.username + " has requested a champion, he got " + name
-        );
+        if (!isAllowed) {
+          embed.setDescription(reason).setColor("#ff0000");
+          console.log(reason);
+        } else {
+          const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`;
+          embed.setDescription(
+            `Nice, **${msg.author.username
+            }** ! You've caught [**${name}**](https://lol.gamepedia.com/${encodeURI(name)})`
+          );
+          embed.color = 0x00ff00;
+          console.log(loadingSplashUrl);
+          embed.setImage(loadingSplashUrl);
+          embed.setFooter(`Level ${level}`);
+          console.log(
+            msg.author.username + " has requested a champion, he got " + name
+          );
+        }
+        return msg.reply(embed);
       }
-      return msg.reply(embed);
+      if (COMMANDS.INVENTORY.has(msg.content)) {
+        const invetoryList = await getInventory(msg.author.username);
+        const embed = new MessageEmbed();
+        embed.color = 0x00ff00;
+        embed.setDescription(
+          `Hey **${msg.author.username}**, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)}): (Total ${invetoryList.split("\n").length
+          } Champions)` 
+        );
+        console.log(
+          msg.author.username +
+          " has requeted his inventory, he has " +
+          invetoryList.split("\n").length +
+          " champions"
+        );
+        return msg.reply(embed);
+      }
     }
-    if (COMMANDS.INVENTORY.has(msg.content)) {
-      const invetoryList = await getInventory(msg.author.username);
-      const embed = new MessageEmbed();
-      embed.color = 0x00ff00;
-      embed.setDescription(
-        `Hey **${msg.author.username}**, here's your inventory: (Total ${
-          invetoryList.split("\n").length
-        } Champions)` +
-        "\n" +
-        `[**Inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)})`
-      );
-      console.log(
-        msg.author.username +
-        " has requeted his inventory, he has " +
-        invetoryList.split("\n").length +
-        " champions"
-      );
-      return msg.reply(embed);
-    }
+  }
+  catch (e) {
+    console.error('general error:', JSON.stringify(e))
   }
 });
 
 client.login(token);
+
+
+process.on('uncaughtException', (error)=> {
+  console.error("uncaughtException: ", JSON.stringify(error))
+})

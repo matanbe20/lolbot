@@ -27,7 +27,8 @@ const getUserData = async (userName, usersList = {}) => {
 };
 
 const fetchChampion = async (userName, avatar) => {
-  const usersList = JSON.parse(await getAsync(USERS_LIST)) || {};
+  try{
+    const usersList = JSON.parse(await getAsync(USERS_LIST)) || {};
   const userData = (await getUserData(userName, usersList)) || {};
   if (
     userData &&
@@ -68,6 +69,9 @@ const fetchChampion = async (userName, avatar) => {
     id,
     level: championIndex === -1 ? 1 : userData.inventory[championIndex].level,
   };
+  }catch(e){
+    console.error("Error while fetchChampion", JSON.stringify(e))
+  }
 };
 
 const setData = async (key, data) => {
@@ -75,12 +79,16 @@ const setData = async (key, data) => {
 };
 
 const getInventory = async (userName) => {
-  const usersList = JSON.parse(await getAsync(USERS_LIST)) || [];
+  try{
+    const usersList = JSON.parse(await getAsync(USERS_LIST)) || [];
   const userData = await getUserData(userName, usersList);
   const inventory = userData.inventory;
   return inventory
     .map((item) => `**${item.name}** Lv. ${item.level}`)
     .join("\n");
+  }catch(e) {
+    console.error("Error while getInventory", JSON.stringify(e))
+  }
 };
 
 module.exports = {
