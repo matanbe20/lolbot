@@ -7,7 +7,7 @@ function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-findChampionIndex = (champion, inventory = []) => {
+const findChampionIndex = (champion, inventory = []) => {
   for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].name === champion) {
       return i;
@@ -58,4 +58,4 @@ console.log = function (d) {
   log_stdout.write(getTime() + " - " + util.format(d) + "\n");
 };
 
-module.exports = { randomInteger, parseMillisecondsIntoReadableTime };
+module.exports = { randomInteger, findChampionIndex, parseMillisecondsIntoReadableTime };
