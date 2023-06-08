@@ -7,17 +7,19 @@ const COMMANDS = {
   INVENTORY: new Set(["!inventory", "!inv", "!i"]),
 };
 
+const BOT_ID = '929764634423095296';
+
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
 client.on("message", async (msg) => {
   try {
-    if (msg.author.username !== "lolbot") {
+    if (msg.author.id !== BOT_ID) {
       if (COMMANDS.CHAMPION.has(msg.content)) {
         let user = msg.mentions.users.first() || msg.author;
         let avatar = user.displayAvatarURL({ size: 1024, dynamic: true });
-        const result = await fetchChampion(msg.author.username, avatar);
+        const result = await fetchChampion(msg.author, avatar);
         const { name, level, isAllowed, reason, id } = result;
         const embed = new MessageEmbed();
 
@@ -41,24 +43,23 @@ client.on("message", async (msg) => {
         return msg.reply(embed);
       }
       if (COMMANDS.INVENTORY.has(msg.content)) {
-        const invetoryList = await getInventory(msg.author.username);
+        const inventoryList = await getInventory(msg.author);
         const embed = new MessageEmbed();
         embed.color = 0x00ff00;
         embed.setDescription(
-          `Hey **${msg.author.username}**, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)}): (Total ${invetoryList.split("\n").length
-          } Champions)` 
+          `Hey **${msg.author.username}**, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)}): (Total ${inventoryList.split("\n").length
+          } Champions)`
         );
         console.log(
           msg.author.username +
-          " has requeted his inventory, he has " +
-          invetoryList.split("\n").length +
+          " has requested his inventory, he has " +
+          inventoryList.split("\n").length +
           " champions"
         );
         return msg.reply(embed);
       }
     }
-  }
-  catch (e) {
+  } catch (e) {
     console.error('general error:', JSON.stringify(e))
   }
 });
@@ -66,6 +67,6 @@ client.on("message", async (msg) => {
 client.login(token);
 
 
-process.on('uncaughtException', (error)=> {
+process.on('uncaughtException', (error) => {
   console.error("uncaughtException: ", JSON.stringify(error))
 })
