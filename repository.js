@@ -2,6 +2,7 @@ const fetch = require('isomorphic-unfetch');
 const { randomInteger } = require('./utils');
 
 const fetchChampions = async () => {
+  //TODO: add last version check before ---- https://ddragon.leagueoflegends.com/api/versions.json
   const res = await fetch(
     "http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json"
   );
