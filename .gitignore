@@ -1,2 +1,4 @@
 node_modules
 debug.log
+.vscode/launch.json
+backup copy.json

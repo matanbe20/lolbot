@@ -1,0 +1,5940 @@
+{
+    "111819199998865408": {
+        "inventory": [
+            {
+                "name": "Orianna",
+                "level": 11,
+                "id": "Orianna"
+            },
+            {
+                "name": "Jhin",
+                "level": 13,
+                "id": "Jhin"
+            },
+            {
+                "name": "Anivia",
+                "level": 5,
+                "id": "Anivia"
+            },
+            {
+                "name": "Sett",
+                "level": 5,
+                "id": "Sett"
+            },
+            {
+                "name": "Cassiopeia",
+                "level": 10,
+                "id": "Cassiopeia"
+            },
+            {
+                "name": "Trundle",
+                "level": 5,
+                "id": "Trundle"
+            },
+            {
+                "name": "Gwen",
+                "level": 6,
+                "id": "Gwen"
+            },
+            {
+                "name": "Morgana",
+                "level": 4,
+                "id": "Morgana"
+            },
+            {
+                "name": "Azir",
+                "level": 6,
+                "id": "Azir"
+            },
+            {
+                "name": "Quinn",
+                "level": 9,
+                "id": "Quinn"
+            },
+            {
+                "name": "Lillia",
+                "level": 7,
+                "id": "Lillia"
+            },
+            {
+                "name": "Thresh",
+                "level": 3,
+                "id": "Thresh"
+            },
+            {
+                "name": "Vayne",
+                "level": 6,
+                "id": "Vayne"
+            },
+            {
+                "name": "Shaco",
+                "level": 5,
+                "id": "Shaco"
+            },
+            {
+                "name": "Nidalee",
+                "level": 10,
+                "id": "Nidalee"
+            },
+            {
+                "name": "Bard",
+                "level": 6,
+                "id": "Bard"
+            },
+            {
+                "name": "Teemo",
+                "level": 9,
+                "id": "Teemo"
+            },
+            {
+                "name": "JarvanIV",
+                "level": 8,
+                "id": "JarvanIV"
+            },
+            {
+                "name": "Janna",
+                "level": 6,
+                "id": "Janna"
+            },
+            {
+                "name": "Yone",
+                "level": 4,
+                "id": "Yone"
+            },
+            {
+                "name": "Jax",
+                "level": 7,
+                "id": "Jax"
+            },
+            {
+                "name": "Hecarim",
+                "level": 8,
+                "id": "Hecarim"
+            },
+            {
+                "name": "MasterYi",
+                "level": 13,
+                "id": "MasterYi"
+            },
+            {
+                "name": "Brand",
+                "level": 10,
+                "id": "Brand"
+            },
+            {
+                "name": "Sivir",
+                "level": 7,
+                "id": "Sivir"
+            },
+            {
+                "name": "Viego",
+                "level": 6,
+                "id": "Viego"
+            },
+            {
+                "name": "Illaoi",
+                "level": 8,
+                "id": "Illaoi"
+            },
+            {
+                "name": "Gnar",
+                "level": 8,
+                "id": "Gnar"
+            },
+            {
+                "name": "Sona",
+                "level": 10,
+                "id": "Sona"
+            },
+            {
+                "name": "Ryze",
+                "level": 8,
+                "id": "Ryze"
+            },
+            {
+                "name": "Kalista",
+                "level": 9,
+                "id": "Kalista"
+            },
+            {
+                "name": "Dr.Mundo",
+                "id": "DrMundo",
+                "level": 5
+            },
+            {
+                "name": "Shyvana",
+                "id": "Shyvana",
+                "level": 9
+            },
+            {
+                "name": "Mordekaiser",
+                "level": 10,
+                "id": "Mordekaiser"
+            },
+            {
+                "name": "Samira",
+                "level": 9,
+                "id": "Samira"
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 6
+            },
+            {
+                "name": "Tryndamere",
+                "id": "Tryndamere",
+                "level": 9
+            },
+            {
+                "name": "Aatrox",
+                "id": "Aatrox",
+                "level": 6
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 5
+            },
+            {
+                "name": "Lissandra",
+                "id": "Lissandra",
+                "level": 7
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 8
+            },
+            {
+                "name": "Garen",
+                "id": "Garen",
+                "level": 7
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 7
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 7
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 10
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 6
+            },
+            {
+                "name": "Seraphine",
+                "id": "Seraphine",
+                "level": 8
+            },
+            {
+                "name": "Gangplank",
+                "id": "Gangplank",
+                "level": 8
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 6
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 9
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 6
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 10
+            },
+            {
+                "name": "Olaf",
+                "id": "Olaf",
+                "level": 4
+            },
+            {
+                "name": "Nunu&Willump",
+                "id": "Nunu",
+                "level": 8
+            },
+            {
+                "name": "Rengar",
+                "id": "Rengar",
+                "level": 4
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 3
+            },
+            {
+                "name": "Blitzcrank",
+                "id": "Blitzcrank",
+                "level": 8
+            },
+            {
+                "name": "Nocturne",
+                "id": "Nocturne",
+                "level": 9
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 2
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 3
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 5
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 8
+            },
+            {
+                "name": "Xayah",
+                "id": "Xayah",
+                "level": 8
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 4
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 8
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 5
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 5
+            },
+            {
+                "name": "Kled",
+                "id": "Kled",
+                "level": 8
+            },
+            {
+                "name": "Kai'Sa",
+                "id": "Kaisa",
+                "level": 2
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 7
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 6
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 8
+            },
+            {
+                "name": "Amumu",
+                "id": "Amumu",
+                "level": 9
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 5
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 6
+            },
+            {
+                "name": "Rek'Sai",
+                "id": "RekSai",
+                "level": 2
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 7
+            },
+            {
+                "name": "Draven",
+                "id": "Draven",
+                "level": 11
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 8
+            },
+            {
+                "name": "Qiyana",
+                "id": "Qiyana",
+                "level": 5
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 8
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 6
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 7
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 7
+            },
+            {
+                "name": "Poppy",
+                "id": "Poppy",
+                "level": 6
+            },
+            {
+                "name": "Rakan",
+                "id": "Rakan",
+                "level": 6
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 7
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 8
+            },
+            {
+                "name": "Volibear",
+                "id": "Volibear",
+                "level": 4
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 6
+            },
+            {
+                "name": "Warwick",
+                "id": "Warwick",
+                "level": 7
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 9
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 3
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 6
+            },
+            {
+                "name": "Camille",
+                "id": "Camille",
+                "level": 4
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 7
+            },
+            {
+                "name": "Vex",
+                "id": "Vex",
+                "level": 7
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 7
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 8
+            },
+            {
+                "name": "Zoe",
+                "id": "Zoe",
+                "level": 7
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 4
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 5
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 3
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 8
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 4
+            },
+            {
+                "name": "Katarina",
+                "id": "Katarina",
+                "level": 8
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 10
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 6
+            },
+            {
+                "name": "Nami",
+                "id": "Nami",
+                "level": 3
+            },
+            {
+                "name": "Varus",
+                "id": "Varus",
+                "level": 9
+            },
+            {
+                "name": "Diana",
+                "id": "Diana",
+                "level": 2
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 9
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 5
+            },
+            {
+                "name": "Tristana",
+                "id": "Tristana",
+                "level": 3
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 6
+            },
+            {
+                "name": "Syndra",
+                "id": "Syndra",
+                "level": 8
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 1
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 5
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 7
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 12
+            },
+            {
+                "name": "Xerath",
+                "id": "Xerath",
+                "level": 10
+            },
+            {
+                "name": "Neeko",
+                "id": "Neeko",
+                "level": 9
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 7
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 5
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 7
+            },
+            {
+                "name": "Irelia",
+                "id": "Irelia",
+                "level": 4
+            },
+            {
+                "name": "Vi",
+                "id": "Vi",
+                "level": 6
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 7
+            },
+            {
+                "name": "Ekko",
+                "id": "Ekko",
+                "level": 3
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 5
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 8
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 5
+            },
+            {
+                "name": "Kayle",
+                "id": "Kayle",
+                "level": 2
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 8
+            },
+            {
+                "name": "Yorick",
+                "id": "Yorick",
+                "level": 5
+            },
+            {
+                "name": "Evelynn",
+                "id": "Evelynn",
+                "level": 3
+            },
+            {
+                "name": "Vladimir",
+                "id": "Vladimir",
+                "level": 6
+            },
+            {
+                "name": "Graves",
+                "id": "Graves",
+                "level": 5
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 3
+            },
+            {
+                "name": "Ezreal",
+                "id": "Ezreal",
+                "level": 5
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 4
+            },
+            {
+                "name": "Lulu",
+                "id": "Lulu",
+                "level": 5
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 6
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 7
+            },
+            {
+                "name": "Pantheon",
+                "id": "Pantheon",
+                "level": 3
+            },
+            {
+                "name": "Yuumi",
+                "id": "Yuumi",
+                "level": 2
+            },
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 5
+            },
+            {
+                "name": "Rell",
+                "id": "Rell",
+                "level": 6
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 6
+            },
+            {
+                "name": "Rammus",
+                "id": "Rammus",
+                "level": 5
+            },
+            {
+                "name": "Cho'Gath",
+                "id": "Chogath",
+                "level": 4
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 5
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 9
+            },
+            {
+                "name": "Nasus",
+                "id": "Nasus",
+                "level": 2
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 5
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 3
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 5
+            },
+            {
+                "name": "Nilah",
+                "id": "Nilah",
+                "level": 4
+            },
+            {
+                "name": "Zeri",
+                "id": "Zeri",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-06-07T16:18:37.059Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/111819199998865408/625de48b98ce584132258db13e57f49f.webp?size=1024"
+    },
+    "323938736662380565": {
+        "inventory": [
+            {
+                "name": "Senna",
+                "level": 3,
+                "id": "Senna"
+            },
+            {
+                "name": "Seraphine",
+                "level": 9,
+                "id": "Seraphine"
+            },
+            {
+                "name": "Jinx",
+                "level": 9,
+                "id": "Jinx"
+            },
+            {
+                "name": "Irelia",
+                "level": 5,
+                "id": "Irelia"
+            },
+            {
+                "name": "Vladimir",
+                "level": 7,
+                "id": "Vladimir"
+            },
+            {
+                "name": "Volibear",
+                "level": 9,
+                "id": "Volibear"
+            },
+            {
+                "name": "Rell",
+                "level": 7,
+                "id": "Rell"
+            },
+            {
+                "name": "Karma",
+                "level": 8,
+                "id": "Karma"
+            },
+            {
+                "name": "Camille",
+                "level": 6,
+                "id": "Camille"
+            },
+            {
+                "name": "Shaco",
+                "level": 9,
+                "id": "Shaco"
+            },
+            {
+                "name": "Quinn",
+                "level": 12,
+                "id": "Quinn"
+            },
+            {
+                "name": "Cho'Gath",
+                "level": 4,
+                "id": "Chogath"
+            },
+            {
+                "name": "Blitzcrank",
+                "level": 4,
+                "id": "Orianna"
+            },
+            {
+                "name": "Thresh",
+                "level": 7,
+                "id": "Blitzcrank"
+            },
+            {
+                "name": "Warwick",
+                "level": 5,
+                "id": "Warwick"
+            },
+            {
+                "name": "Tristana",
+                "level": 5,
+                "id": "Tristana"
+            },
+            {
+                "name": "Ahri",
+                "level": 4,
+                "id": "Ahri"
+            },
+            {
+                "name": "Viego",
+                "level": 6,
+                "id": "Viego"
+            },
+            {
+                "name": "Yone",
+                "level": 8,
+                "id": "Yone"
+            },
+            {
+                "name": "Braum",
+                "level": 7,
+                "id": "Braum"
+            },
+            {
+                "name": "Azir",
+                "level": 9,
+                "id": "Azir"
+            },
+            {
+                "name": "Shyvana",
+                "level": 9,
+                "id": "Shyvana"
+            },
+            {
+                "name": "Teemo",
+                "level": 8,
+                "id": "Teemo"
+            },
+            {
+                "name": "Lillia",
+                "level": 6,
+                "id": "Lillia"
+            },
+            {
+                "name": "Qiyana",
+                "id": "Qiyana",
+                "level": 6
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 6
+            },
+            {
+                "name": "Bard",
+                "id": "Bard",
+                "level": 4
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 8
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 9
+            },
+            {
+                "name": "Rammus",
+                "id": "Rammus",
+                "level": 10
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 10
+            },
+            {
+                "name": "Neeko",
+                "id": "Neeko",
+                "level": 9
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 5
+            },
+            {
+                "name": "Katarina",
+                "id": "Katarina",
+                "level": 8
+            },
+            {
+                "name": "Nocturne",
+                "id": "Nocturne",
+                "level": 10
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 5
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 5
+            },
+            {
+                "name": "Nunu&Willump",
+                "id": "Nunu",
+                "level": 7
+            },
+            {
+                "name": "Kayle",
+                "id": "Kayle",
+                "level": 2
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 5
+            },
+            {
+                "name": "Olaf",
+                "id": "Olaf",
+                "level": 5
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 7
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 6
+            },
+            {
+                "name": "Xerath",
+                "id": "Xerath",
+                "level": 5
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 4
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 11
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 6
+            },
+            {
+                "name": "Graves",
+                "id": "Graves",
+                "level": 8
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 7
+            },
+            {
+                "name": "Kled",
+                "id": "Kled",
+                "level": 2
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 7
+            },
+            {
+                "name": "Jax",
+                "id": "Jax",
+                "level": 5
+            },
+            {
+                "name": "Rengar",
+                "id": "Rengar",
+                "level": 5
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 8
+            },
+            {
+                "name": "Amumu",
+                "id": "Amumu",
+                "level": 4
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 5
+            },
+            {
+                "name": "Hecarim",
+                "id": "Hecarim",
+                "level": 4
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 4
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 4
+            },
+            {
+                "name": "Lulu",
+                "id": "Lulu",
+                "level": 10
+            },
+            {
+                "name": "Garen",
+                "id": "Garen",
+                "level": 6
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 6
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 8
+            },
+            {
+                "name": "Kai'Sa",
+                "id": "Kaisa",
+                "level": 5
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 5
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 8
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 7
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 3
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 8
+            },
+            {
+                "name": "Yuumi",
+                "id": "Yuumi",
+                "level": 4
+            },
+            {
+                "name": "Nasus",
+                "id": "Nasus",
+                "level": 6
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 8
+            },
+            {
+                "name": "Anivia",
+                "id": "Anivia",
+                "level": 6
+            },
+            {
+                "name": "Mordekaiser",
+                "id": "Mordekaiser",
+                "level": 7
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 4
+            },
+            {
+                "name": "MasterYi",
+                "id": "MasterYi",
+                "level": 9
+            },
+            {
+                "name": "Vex",
+                "id": "Vex",
+                "level": 7
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 3
+            },
+            {
+                "name": "Janna",
+                "id": "Janna",
+                "level": 8
+            },
+            {
+                "name": "Dr.Mundo",
+                "id": "DrMundo",
+                "level": 3
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 6
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 8
+            },
+            {
+                "name": "Aatrox",
+                "id": "Aatrox",
+                "level": 9
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 4
+            },
+            {
+                "name": "Zoe",
+                "id": "Zoe",
+                "level": 8
+            },
+            {
+                "name": "Pantheon",
+                "id": "Pantheon",
+                "level": 3
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 6
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 4
+            },
+            {
+                "name": "Vi",
+                "id": "Vi",
+                "level": 3
+            },
+            {
+                "name": "Sett",
+                "id": "Sett",
+                "level": 8
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 3
+            },
+            {
+                "name": "Tryndamere",
+                "id": "Tryndamere",
+                "level": 7
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 5
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 6
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 7
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 6
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 7
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 9
+            },
+            {
+                "name": "Evelynn",
+                "id": "Evelynn",
+                "level": 3
+            },
+            {
+                "name": "Ezreal",
+                "id": "Ezreal",
+                "level": 4
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 6
+            },
+            {
+                "name": "Cassiopeia",
+                "id": "Cassiopeia",
+                "level": 5
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 4
+            },
+            {
+                "name": "Morgana",
+                "id": "Morgana",
+                "level": 7
+            },
+            {
+                "name": "Ekko",
+                "id": "Ekko",
+                "level": 4
+            },
+            {
+                "name": "Gangplank",
+                "id": "Gangplank",
+                "level": 7
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 4
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 4
+            },
+            {
+                "name": "Gnar",
+                "id": "Gnar",
+                "level": 3
+            },
+            {
+                "name": "Varus",
+                "id": "Varus",
+                "level": 9
+            },
+            {
+                "name": "Rakan",
+                "id": "Rakan",
+                "level": 8
+            },
+            {
+                "name": "Rek'Sai",
+                "id": "RekSai",
+                "level": 5
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 8
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 6
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 5
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 8
+            },
+            {
+                "name": "Trundle",
+                "id": "Trundle",
+                "level": 6
+            },
+            {
+                "name": "Syndra",
+                "id": "Syndra",
+                "level": 4
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 5
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 4
+            },
+            {
+                "name": "Sivir",
+                "id": "Sivir",
+                "level": 6
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 8
+            },
+            {
+                "name": "Samira",
+                "id": "Samira",
+                "level": 4
+            },
+            {
+                "name": "Draven",
+                "id": "Draven",
+                "level": 6
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 6
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 7
+            },
+            {
+                "name": "Xayah",
+                "id": "Xayah",
+                "level": 4
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 5
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 3
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 7
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 6
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 4
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 5
+            },
+            {
+                "name": "Yorick",
+                "id": "Yorick",
+                "level": 5
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 3
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 8
+            },
+            {
+                "name": "Diana",
+                "id": "Diana",
+                "level": 6
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 4
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 3
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 2
+            },
+            {
+                "name": "Brand",
+                "id": "Brand",
+                "level": 5
+            },
+            {
+                "name": "Nami",
+                "id": "Nami",
+                "level": 4
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 7
+            },
+            {
+                "name": "Poppy",
+                "id": "Poppy",
+                "level": 8
+            },
+            {
+                "name": "JarvanIV",
+                "id": "JarvanIV",
+                "level": 6
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 8
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 4
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 3
+            },
+            {
+                "name": "Lissandra",
+                "id": "Lissandra",
+                "level": 6
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 5
+            },
+            {
+                "name": "Kalista",
+                "id": "Kalista",
+                "level": 3
+            },
+            {
+                "name": "Vayne",
+                "id": "Vayne",
+                "level": 2
+            },
+            {
+                "name": "Gwen",
+                "id": "Gwen",
+                "level": 5
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 4
+            },
+            {
+                "name": "Ryze",
+                "id": "Ryze",
+                "level": 3
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 2
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 1
+            },
+            {
+                "name": "K'Sante",
+                "id": "KSante",
+                "level": 2
+            },
+            {
+                "name": "Zeri",
+                "id": "Zeri",
+                "level": 3
+            },
+            {
+                "name": "RenataGlasc",
+                "id": "Renata",
+                "level": 2
+            }
+        ],
+        "lastRequestDate": "2023-06-07T20:53:13.513Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/323938736662380565/358b49d73ecf6242947c2ca0cd4084e0.webp?size=1024"
+    },
+    "161522672788963328": {
+        "inventory": [
+            {
+                "name": "Diana",
+                "level": 4,
+                "id": "Diana"
+            },
+            {
+                "name": "Ekko",
+                "level": 4,
+                "id": "Ekko"
+            },
+            {
+                "name": "Gangplank",
+                "level": 4,
+                "id": "Gangplank"
+            },
+            {
+                "name": "Cho'Gath",
+                "level": 6,
+                "id": "Chogath"
+            },
+            {
+                "name": "Karma",
+                "level": 3,
+                "id": "Karma"
+            },
+            {
+                "name": "Rakan",
+                "level": 5,
+                "id": "Rakan"
+            },
+            {
+                "name": "Viego",
+                "level": 6,
+                "id": "Viego"
+            },
+            {
+                "name": "Katarina",
+                "level": 5,
+                "id": "Katarina"
+            },
+            {
+                "name": "LeeSin",
+                "level": 6,
+                "id": "LeeSin"
+            },
+            {
+                "name": "Jax",
+                "level": 4,
+                "id": "Jax"
+            },
+            {
+                "name": "Nami",
+                "level": 5,
+                "id": "Nami"
+            },
+            {
+                "name": "Skarner",
+                "level": 3,
+                "id": "Skarner"
+            },
+            {
+                "name": "Vex",
+                "level": 7,
+                "id": "Vex"
+            },
+            {
+                "name": "Poppy",
+                "level": 2,
+                "id": "Poppy"
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 6
+            },
+            {
+                "name": "Qiyana",
+                "id": "Qiyana",
+                "level": 3
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 4
+            },
+            {
+                "name": "Azir",
+                "id": "Azir",
+                "level": 3
+            },
+            {
+                "name": "Ryze",
+                "id": "Ryze",
+                "level": 4
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 4
+            },
+            {
+                "name": "Nunu&Willump",
+                "id": "Nunu",
+                "level": 6
+            },
+            {
+                "name": "Xerath",
+                "id": "Xerath",
+                "level": 7
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 3
+            },
+            {
+                "name": "Rengar",
+                "id": "Rengar",
+                "level": 8
+            },
+            {
+                "name": "Warwick",
+                "id": "Warwick",
+                "level": 3
+            },
+            {
+                "name": "Kayle",
+                "id": "Kayle",
+                "level": 2
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 5
+            },
+            {
+                "name": "MasterYi",
+                "id": "MasterYi",
+                "level": 7
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 4
+            },
+            {
+                "name": "Aatrox",
+                "id": "Aatrox",
+                "level": 4
+            },
+            {
+                "name": "Kalista",
+                "id": "Kalista",
+                "level": 4
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 5
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 3
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 7
+            },
+            {
+                "name": "Irelia",
+                "id": "Irelia",
+                "level": 4
+            },
+            {
+                "name": "Shaco",
+                "id": "Shaco",
+                "level": 5
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 3
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 4
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 2
+            },
+            {
+                "name": "Nasus",
+                "id": "Nasus",
+                "level": 4
+            },
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 4
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 7
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 5
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 6
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 6
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 5
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 4
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 7
+            },
+            {
+                "name": "Samira",
+                "id": "Samira",
+                "level": 5
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 6
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 6
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 2
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 6
+            },
+            {
+                "name": "Varus",
+                "id": "Varus",
+                "level": 3
+            },
+            {
+                "name": "Graves",
+                "id": "Graves",
+                "level": 3
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 1
+            },
+            {
+                "name": "Shyvana",
+                "id": "Shyvana",
+                "level": 5
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 5
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 2
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 2
+            },
+            {
+                "name": "Nocturne",
+                "id": "Nocturne",
+                "level": 4
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 5
+            },
+            {
+                "name": "Kled",
+                "id": "Kled",
+                "level": 5
+            },
+            {
+                "name": "Anivia",
+                "id": "Anivia",
+                "level": 3
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 5
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 5
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 3
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 2
+            },
+            {
+                "name": "Trundle",
+                "id": "Trundle",
+                "level": 4
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 4
+            },
+            {
+                "name": "Cassiopeia",
+                "id": "Cassiopeia",
+                "level": 4
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 6
+            },
+            {
+                "name": "Sett",
+                "id": "Sett",
+                "level": 2
+            },
+            {
+                "name": "Ezreal",
+                "id": "Ezreal",
+                "level": 6
+            },
+            {
+                "name": "Seraphine",
+                "id": "Seraphine",
+                "level": 3
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 5
+            },
+            {
+                "name": "Garen",
+                "id": "Garen",
+                "level": 3
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 5
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 3
+            },
+            {
+                "name": "Teemo",
+                "id": "Teemo",
+                "level": 3
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 2
+            },
+            {
+                "name": "Syndra",
+                "id": "Syndra",
+                "level": 6
+            },
+            {
+                "name": "Brand",
+                "id": "Brand",
+                "level": 5
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 2
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 3
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 2
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 4
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 3
+            },
+            {
+                "name": "Tristana",
+                "id": "Tristana",
+                "level": 6
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 8
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 4
+            },
+            {
+                "name": "Lillia",
+                "id": "Lillia",
+                "level": 4
+            },
+            {
+                "name": "Yone",
+                "id": "Yone",
+                "level": 2
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 5
+            },
+            {
+                "name": "Dr.Mundo",
+                "id": "DrMundo",
+                "level": 6
+            },
+            {
+                "name": "Gnar",
+                "id": "Gnar",
+                "level": 1
+            },
+            {
+                "name": "Xayah",
+                "id": "Xayah",
+                "level": 4
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 4
+            },
+            {
+                "name": "Yuumi",
+                "id": "Yuumi",
+                "level": 2
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 7
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 3
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 5
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 3
+            },
+            {
+                "name": "Thresh",
+                "id": "Thresh",
+                "level": 3
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 7
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 7
+            },
+            {
+                "name": "Yorick",
+                "id": "Yorick",
+                "level": 6
+            },
+            {
+                "name": "Lissandra",
+                "id": "Lissandra",
+                "level": 1
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 4
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 6
+            },
+            {
+                "name": "Evelynn",
+                "id": "Evelynn",
+                "level": 2
+            },
+            {
+                "name": "Mordekaiser",
+                "id": "Mordekaiser",
+                "level": 4
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 5
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 3
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 2
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 4
+            },
+            {
+                "name": "Rell",
+                "id": "Rell",
+                "level": 3
+            },
+            {
+                "name": "Rek'Sai",
+                "id": "RekSai",
+                "level": 2
+            },
+            {
+                "name": "Quinn",
+                "id": "Quinn",
+                "level": 2
+            },
+            {
+                "name": "Gwen",
+                "id": "Gwen",
+                "level": 1
+            },
+            {
+                "name": "Kai'Sa",
+                "id": "Kaisa",
+                "level": 4
+            },
+            {
+                "name": "Blitzcrank",
+                "id": "Blitzcrank",
+                "level": 3
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 2
+            },
+            {
+                "name": "Draven",
+                "id": "Draven",
+                "level": 3
+            },
+            {
+                "name": "Olaf",
+                "id": "Olaf",
+                "level": 3
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 3
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 5
+            },
+            {
+                "name": "JarvanIV",
+                "id": "JarvanIV",
+                "level": 3
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 4
+            },
+            {
+                "name": "Bard",
+                "id": "Bard",
+                "level": 3
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 3
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 5
+            },
+            {
+                "name": "Amumu",
+                "id": "Amumu",
+                "level": 6
+            },
+            {
+                "name": "Rammus",
+                "id": "Rammus",
+                "level": 2
+            },
+            {
+                "name": "Hecarim",
+                "id": "Hecarim",
+                "level": 1
+            },
+            {
+                "name": "Vayne",
+                "id": "Vayne",
+                "level": 3
+            },
+            {
+                "name": "Janna",
+                "id": "Janna",
+                "level": 4
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 1
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 1
+            },
+            {
+                "name": "Vladimir",
+                "id": "Vladimir",
+                "level": 2
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 4
+            },
+            {
+                "name": "Zoe",
+                "id": "Zoe",
+                "level": 2
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 5
+            },
+            {
+                "name": "Lulu",
+                "id": "Lulu",
+                "level": 3
+            },
+            {
+                "name": "Neeko",
+                "id": "Neeko",
+                "level": 3
+            },
+            {
+                "name": "Sivir",
+                "id": "Sivir",
+                "level": 3
+            },
+            {
+                "name": "Camille",
+                "id": "Camille",
+                "level": 3
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 1
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 2
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 2
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 2
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 1
+            },
+            {
+                "name": "Vi",
+                "id": "Vi",
+                "level": 1
+            },
+            {
+                "name": "K'Sante",
+                "id": "KSante",
+                "level": 1
+            },
+            {
+                "name": "Morgana",
+                "id": "Morgana",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-06-07T16:44:12.638Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/161522672788963328/24abb425a348daf5a6129a368344bab9.webp?size=1024"
+    },
+    "161573141481521152": {
+        "inventory": [
+            {
+                "name": "Varus",
+                "level": 4,
+                "id": "Varus"
+            },
+            {
+                "name": "Qiyana",
+                "level": 5,
+                "id": "Qiyana"
+            },
+            {
+                "name": "Veigar",
+                "level": 3,
+                "id": "Veigar"
+            },
+            {
+                "name": "MasterYi",
+                "level": 3,
+                "id": "MasterYi"
+            },
+            {
+                "name": "Teemo",
+                "level": 5,
+                "id": "Teemo"
+            },
+            {
+                "name": "Xayah",
+                "level": 5,
+                "id": "Xayah"
+            },
+            {
+                "name": "Ekko",
+                "level": 2,
+                "id": "Poppy"
+            },
+            {
+                "name": "Dr.Mundo",
+                "level": 3,
+                "id": "DrMundo"
+            },
+            {
+                "name": "Caitlyn",
+                "level": 4,
+                "id": "Caitlyn"
+            },
+            {
+                "name": "Cassiopeia",
+                "level": 4,
+                "id": "Cassiopeia"
+            },
+            {
+                "name": "Kayle",
+                "level": 2,
+                "id": "Kayle"
+            },
+            {
+                "name": "Kai'Sa",
+                "level": 5,
+                "id": "Kaisa"
+            },
+            {
+                "name": "Nunu&Willump",
+                "level": 7,
+                "id": "Nunu"
+            },
+            {
+                "name": "Diana",
+                "level": 4,
+                "id": "Diana"
+            },
+            {
+                "name": "Ezreal",
+                "level": 4,
+                "id": "Ezreal"
+            },
+            {
+                "name": "Rell",
+                "level": 7,
+                "id": "Rell"
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 5
+            },
+            {
+                "name": "Shaco",
+                "id": "Shaco",
+                "level": 5
+            },
+            {
+                "name": "Xerath",
+                "id": "Xerath",
+                "level": 1
+            },
+            {
+                "name": "Sett",
+                "id": "Sett",
+                "level": 2
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 3
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 3
+            },
+            {
+                "name": "Ryze",
+                "id": "Ryze",
+                "level": 6
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 1
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 4
+            },
+            {
+                "name": "Viego",
+                "id": "Viego",
+                "level": 3
+            },
+            {
+                "name": "Vex",
+                "id": "Vex",
+                "level": 4
+            },
+            {
+                "name": "Gangplank",
+                "id": "Gangplank",
+                "level": 2
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 5
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 10
+            },
+            {
+                "name": "Brand",
+                "id": "Brand",
+                "level": 4
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 3
+            },
+            {
+                "name": "Syndra",
+                "id": "Syndra",
+                "level": 3
+            },
+            {
+                "name": "Draven",
+                "id": "Draven",
+                "level": 6
+            },
+            {
+                "name": "Kled",
+                "id": "Kled",
+                "level": 5
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 4
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 3
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 2
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 4
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 2
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 3
+            },
+            {
+                "name": "JarvanIV",
+                "id": "JarvanIV",
+                "level": 6
+            },
+            {
+                "name": "Lulu",
+                "id": "Lulu",
+                "level": 5
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 2
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 3
+            },
+            {
+                "name": "Amumu",
+                "id": "Amumu",
+                "level": 2
+            },
+            {
+                "name": "Camille",
+                "id": "Camille",
+                "level": 3
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 3
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 3
+            },
+            {
+                "name": "Kalista",
+                "id": "Kalista",
+                "level": 3
+            },
+            {
+                "name": "Quinn",
+                "id": "Quinn",
+                "level": 3
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 2
+            },
+            {
+                "name": "Tristana",
+                "id": "Tristana",
+                "level": 1
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 2
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 5
+            },
+            {
+                "name": "Rengar",
+                "id": "Rengar",
+                "level": 4
+            },
+            {
+                "name": "Hecarim",
+                "id": "Hecarim",
+                "level": 3
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 2
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 1
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 7
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 1
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 4
+            },
+            {
+                "name": "Pantheon",
+                "id": "Pantheon",
+                "level": 4
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 3
+            },
+            {
+                "name": "Jax",
+                "id": "Jax",
+                "level": 3
+            },
+            {
+                "name": "Garen",
+                "id": "Garen",
+                "level": 4
+            },
+            {
+                "name": "Azir",
+                "id": "Azir",
+                "level": 3
+            },
+            {
+                "name": "Blitzcrank",
+                "id": "Blitzcrank",
+                "level": 5
+            },
+            {
+                "name": "Anivia",
+                "id": "Anivia",
+                "level": 2
+            },
+            {
+                "name": "Morgana",
+                "id": "Morgana",
+                "level": 4
+            },
+            {
+                "name": "Mordekaiser",
+                "id": "Mordekaiser",
+                "level": 4
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 2
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 6
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 4
+            },
+            {
+                "name": "Katarina",
+                "id": "Katarina",
+                "level": 2
+            },
+            {
+                "name": "Aatrox",
+                "id": "Aatrox",
+                "level": 3
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 2
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 4
+            },
+            {
+                "name": "Lissandra",
+                "id": "Lissandra",
+                "level": 1
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 4
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 4
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 3
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 4
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 3
+            },
+            {
+                "name": "Poppy",
+                "id": "Poppy",
+                "level": 4
+            },
+            {
+                "name": "Volibear",
+                "id": "Volibear",
+                "level": 4
+            },
+            {
+                "name": "Yuumi",
+                "id": "Yuumi",
+                "level": 7
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 4
+            },
+            {
+                "name": "Nocturne",
+                "id": "Nocturne",
+                "level": 3
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 2
+            },
+            {
+                "name": "Yone",
+                "id": "Yone",
+                "level": 3
+            },
+            {
+                "name": "Cho'Gath",
+                "id": "Chogath",
+                "level": 4
+            },
+            {
+                "name": "Irelia",
+                "id": "Irelia",
+                "level": 4
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 4
+            },
+            {
+                "name": "Zoe",
+                "id": "Zoe",
+                "level": 5
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 3
+            },
+            {
+                "name": "Neeko",
+                "id": "Neeko",
+                "level": 1
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 4
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 3
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 3
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 4
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 1
+            },
+            {
+                "name": "Rakan",
+                "id": "Rakan",
+                "level": 6
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 2
+            },
+            {
+                "name": "Warwick",
+                "id": "Warwick",
+                "level": 5
+            },
+            {
+                "name": "Janna",
+                "id": "Janna",
+                "level": 3
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 4
+            },
+            {
+                "name": "Nami",
+                "id": "Nami",
+                "level": 1
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 4
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 3
+            },
+            {
+                "name": "Yorick",
+                "id": "Yorick",
+                "level": 1
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 2
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 3
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 3
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 4
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 3
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 2
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 2
+            },
+            {
+                "name": "Rek'Sai",
+                "id": "RekSai",
+                "level": 3
+            },
+            {
+                "name": "Trundle",
+                "id": "Trundle",
+                "level": 1
+            },
+            {
+                "name": "Vladimir",
+                "id": "Vladimir",
+                "level": 2
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 2
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 2
+            },
+            {
+                "name": "Gnar",
+                "id": "Gnar",
+                "level": 3
+            },
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 1
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 3
+            },
+            {
+                "name": "Olaf",
+                "id": "Olaf",
+                "level": 4
+            },
+            {
+                "name": "Thresh",
+                "id": "Thresh",
+                "level": 2
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 2
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 2
+            },
+            {
+                "name": "Samira",
+                "id": "Samira",
+                "level": 4
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 3
+            },
+            {
+                "name": "Seraphine",
+                "id": "Seraphine",
+                "level": 3
+            },
+            {
+                "name": "Shyvana",
+                "id": "Shyvana",
+                "level": 5
+            },
+            {
+                "name": "Evelynn",
+                "id": "Evelynn",
+                "level": 1
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 2
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 2
+            },
+            {
+                "name": "Vi",
+                "id": "Vi",
+                "level": 2
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 1
+            },
+            {
+                "name": "Lillia",
+                "id": "Lillia",
+                "level": 1
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 2
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 1
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 2
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 1
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 2
+            },
+            {
+                "name": "Rammus",
+                "id": "Rammus",
+                "level": 3
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 2
+            },
+            {
+                "name": "Graves",
+                "id": "Graves",
+                "level": 3
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 1
+            },
+            {
+                "name": "Zeri",
+                "id": "Zeri",
+                "level": 2
+            },
+            {
+                "name": "Sivir",
+                "id": "Sivir",
+                "level": 2
+            },
+            {
+                "name": "Nasus",
+                "id": "Nasus",
+                "level": 1
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-06-07T21:11:56.280Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/161573141481521152/90428e073d22bdb7d08d061e095406fc.webp?size=1024"
+    },
+    "177871195335557120": {
+        "inventory": [
+            {
+                "name": "Orianna",
+                "level": 6,
+                "id": "Orianna"
+            },
+            {
+                "name": "Kled",
+                "level": 5,
+                "id": "Kled"
+            },
+            {
+                "name": "Poppy",
+                "level": 10,
+                "id": "Poppy"
+            },
+            {
+                "name": "Yone",
+                "level": 8,
+                "id": "Yone"
+            },
+            {
+                "name": "Evelynn",
+                "level": 4,
+                "id": "Evelynn"
+            },
+            {
+                "name": "Samira",
+                "level": 4,
+                "id": "Samira"
+            },
+            {
+                "name": "Yasuo",
+                "level": 9,
+                "id": "Yasuo"
+            },
+            {
+                "name": "TahmKench",
+                "level": 7,
+                "id": "TahmKench"
+            },
+            {
+                "name": "Xayah",
+                "level": 5,
+                "id": "Xayah"
+            },
+            {
+                "name": "Aatrox",
+                "level": 6,
+                "id": "Aatrox"
+            },
+            {
+                "name": "Cho'Gath",
+                "level": 7,
+                "id": "Chogath"
+            },
+            {
+                "name": "Kayle",
+                "level": 7,
+                "id": "Kayle"
+            },
+            {
+                "name": "Twitch",
+                "level": 11,
+                "id": "Twitch"
+            },
+            {
+                "name": "Hecarim",
+                "level": 8,
+                "id": "Hecarim"
+            },
+            {
+                "name": "Rek'Sai",
+                "level": 2,
+                "id": "RekSai"
+            },
+            {
+                "name": "Pantheon",
+                "level": 5,
+                "id": "Pantheon"
+            },
+            {
+                "name": "Janna",
+                "level": 1,
+                "id": "Janna"
+            },
+            {
+                "name": "Vi",
+                "level": 8,
+                "id": "Vi"
+            },
+            {
+                "name": "Draven",
+                "level": 3,
+                "id": "Draven"
+            },
+            {
+                "name": "LeeSin",
+                "level": 8,
+                "id": "LeeSin"
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 5
+            },
+            {
+                "name": "Trundle",
+                "id": "Trundle",
+                "level": 4
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 8
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 10
+            },
+            {
+                "name": "Ekko",
+                "id": "Ekko",
+                "level": 5
+            },
+            {
+                "name": "Kalista",
+                "id": "Kalista",
+                "level": 5
+            },
+            {
+                "name": "Ezreal",
+                "id": "Ezreal",
+                "level": 5
+            },
+            {
+                "name": "Rammus",
+                "id": "Rammus",
+                "level": 10
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 6
+            },
+            {
+                "name": "MasterYi",
+                "id": "MasterYi",
+                "level": 5
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 2
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 10
+            },
+            {
+                "name": "Vex",
+                "id": "Vex",
+                "level": 7
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 3
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 7
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 3
+            },
+            {
+                "name": "Viego",
+                "id": "Viego",
+                "level": 2
+            },
+            {
+                "name": "Seraphine",
+                "id": "Seraphine",
+                "level": 6
+            },
+            {
+                "name": "Xerath",
+                "id": "Xerath",
+                "level": 9
+            },
+            {
+                "name": "Zoe",
+                "id": "Zoe",
+                "level": 6
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 6
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 1
+            },
+            {
+                "name": "Teemo",
+                "id": "Teemo",
+                "level": 8
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 7
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 7
+            },
+            {
+                "name": "Tryndamere",
+                "id": "Tryndamere",
+                "level": 4
+            },
+            {
+                "name": "Tristana",
+                "id": "Tristana",
+                "level": 5
+            },
+            {
+                "name": "Sett",
+                "id": "Sett",
+                "level": 5
+            },
+            {
+                "name": "Lillia",
+                "id": "Lillia",
+                "level": 10
+            },
+            {
+                "name": "Azir",
+                "id": "Azir",
+                "level": 4
+            },
+            {
+                "name": "Rengar",
+                "id": "Rengar",
+                "level": 4
+            },
+            {
+                "name": "Gangplank",
+                "id": "Gangplank",
+                "level": 7
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 6
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 6
+            },
+            {
+                "name": "JarvanIV",
+                "id": "JarvanIV",
+                "level": 6
+            },
+            {
+                "name": "Lissandra",
+                "id": "Lissandra",
+                "level": 7
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 3
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 9
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 7
+            },
+            {
+                "name": "Qiyana",
+                "id": "Qiyana",
+                "level": 10
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 4
+            },
+            {
+                "name": "Gnar",
+                "id": "Gnar",
+                "level": 5
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 7
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 4
+            },
+            {
+                "name": "Shyvana",
+                "id": "Shyvana",
+                "level": 7
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 4
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 5
+            },
+            {
+                "name": "Bard",
+                "id": "Bard",
+                "level": 12
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 4
+            },
+            {
+                "name": "Rakan",
+                "id": "Rakan",
+                "level": 6
+            },
+            {
+                "name": "Dr.Mundo",
+                "id": "DrMundo",
+                "level": 5
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 7
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 7
+            },
+            {
+                "name": "Shaco",
+                "id": "Shaco",
+                "level": 3
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 6
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 5
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 9
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 7
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 7
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 5
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 2
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 5
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 3
+            },
+            {
+                "name": "Nami",
+                "id": "Nami",
+                "level": 6
+            },
+            {
+                "name": "Camille",
+                "id": "Camille",
+                "level": 4
+            },
+            {
+                "name": "Cassiopeia",
+                "id": "Cassiopeia",
+                "level": 6
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 7
+            },
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 4
+            },
+            {
+                "name": "Vladimir",
+                "id": "Vladimir",
+                "level": 7
+            },
+            {
+                "name": "Graves",
+                "id": "Graves",
+                "level": 4
+            },
+            {
+                "name": "Sivir",
+                "id": "Sivir",
+                "level": 7
+            },
+            {
+                "name": "Nunu&Willump",
+                "id": "Nunu",
+                "level": 6
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 7
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 5
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 6
+            },
+            {
+                "name": "Mordekaiser",
+                "id": "Mordekaiser",
+                "level": 4
+            },
+            {
+                "name": "Gwen",
+                "id": "Gwen",
+                "level": 5
+            },
+            {
+                "name": "Jax",
+                "id": "Jax",
+                "level": 5
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 4
+            },
+            {
+                "name": "Volibear",
+                "id": "Volibear",
+                "level": 6
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 2
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 3
+            },
+            {
+                "name": "Syndra",
+                "id": "Syndra",
+                "level": 5
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 6
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 5
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 6
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 3
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 5
+            },
+            {
+                "name": "Vayne",
+                "id": "Vayne",
+                "level": 9
+            },
+            {
+                "name": "Diana",
+                "id": "Diana",
+                "level": 5
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 4
+            },
+            {
+                "name": "Amumu",
+                "id": "Amumu",
+                "level": 5
+            },
+            {
+                "name": "Rell",
+                "id": "Rell",
+                "level": 5
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 4
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 5
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 7
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 6
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 5
+            },
+            {
+                "name": "Anivia",
+                "id": "Anivia",
+                "level": 5
+            },
+            {
+                "name": "Garen",
+                "id": "Garen",
+                "level": 5
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 8
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 10
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 7
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 7
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 6
+            },
+            {
+                "name": "Nocturne",
+                "id": "Nocturne",
+                "level": 9
+            },
+            {
+                "name": "Morgana",
+                "id": "Morgana",
+                "level": 3
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 3
+            },
+            {
+                "name": "Neeko",
+                "id": "Neeko",
+                "level": 5
+            },
+            {
+                "name": "Varus",
+                "id": "Varus",
+                "level": 6
+            },
+            {
+                "name": "Yuumi",
+                "id": "Yuumi",
+                "level": 2
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 7
+            },
+            {
+                "name": "Yorick",
+                "id": "Yorick",
+                "level": 2
+            },
+            {
+                "name": "Ryze",
+                "id": "Ryze",
+                "level": 3
+            },
+            {
+                "name": "Blitzcrank",
+                "id": "Blitzcrank",
+                "level": 8
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 3
+            },
+            {
+                "name": "Katarina",
+                "id": "Katarina",
+                "level": 1
+            },
+            {
+                "name": "Kai'Sa",
+                "id": "Kaisa",
+                "level": 5
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 1
+            },
+            {
+                "name": "Lulu",
+                "id": "Lulu",
+                "level": 5
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 5
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 5
+            },
+            {
+                "name": "Thresh",
+                "id": "Thresh",
+                "level": 3
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 4
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 2
+            },
+            {
+                "name": "Olaf",
+                "id": "Olaf",
+                "level": 2
+            },
+            {
+                "name": "Brand",
+                "id": "Brand",
+                "level": 3
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 5
+            },
+            {
+                "name": "Nasus",
+                "id": "Nasus",
+                "level": 4
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 2
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 2
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 2
+            },
+            {
+                "name": "Warwick",
+                "id": "Warwick",
+                "level": 1
+            },
+            {
+                "name": "Irelia",
+                "id": "Irelia",
+                "level": 2
+            },
+            {
+                "name": "Quinn",
+                "id": "Quinn",
+                "level": 6
+            },
+            {
+                "name": "K'Sante",
+                "id": "KSante",
+                "level": 2
+            },
+            {
+                "name": "Nilah",
+                "id": "Nilah",
+                "level": 2
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 2
+            },
+            {
+                "name": "RenataGlasc",
+                "id": "Renata",
+                "level": 2
+            },
+            {
+                "name": "Zeri",
+                "id": "Zeri",
+                "level": 5
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 2
+            }
+        ],
+        "lastRequestDate": "2023-06-07T19:10:56.960Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/177871195335557120/db56f317580678071d9beff97de3cc3f.webp?size=1024"
+    },
+    "161591366277791744": {
+        "inventory": [
+            {
+                "name": "Zoe",
+                "level": 7,
+                "id": "Zoe"
+            },
+            {
+                "name": "Vex",
+                "level": 4,
+                "id": "Vex"
+            },
+            {
+                "name": "Qiyana",
+                "level": 1,
+                "id": "Qiyana"
+            },
+            {
+                "name": "Taric",
+                "level": 5,
+                "id": "Taric"
+            },
+            {
+                "name": "Neeko",
+                "level": 2,
+                "id": "Neeko"
+            },
+            {
+                "name": "Nasus",
+                "level": 4,
+                "id": "Nasus"
+            },
+            {
+                "name": "Morgana",
+                "level": 3,
+                "id": "Morgana"
+            },
+            {
+                "name": "Yorick",
+                "level": 5,
+                "id": "Yorick"
+            },
+            {
+                "name": "Ryze",
+                "level": 4,
+                "id": "Ryze"
+            },
+            {
+                "name": "Mordekaiser",
+                "level": 2,
+                "id": "Mordekaiser"
+            },
+            {
+                "name": "Kayle",
+                "level": 2,
+                "id": "Kayle"
+            },
+            {
+                "name": "Draven",
+                "level": 4,
+                "id": "Draven"
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 6
+            },
+            {
+                "name": "Pantheon",
+                "id": "Pantheon",
+                "level": 6
+            },
+            {
+                "name": "Trundle",
+                "id": "Trundle",
+                "level": 4
+            },
+            {
+                "name": "Bard",
+                "id": "Bard",
+                "level": 3
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 4
+            },
+            {
+                "name": "Brand",
+                "id": "Brand",
+                "level": 3
+            },
+            {
+                "name": "Teemo",
+                "id": "Teemo",
+                "level": 11
+            },
+            {
+                "name": "Vayne",
+                "id": "Vayne",
+                "level": 8
+            },
+            {
+                "name": "Varus",
+                "id": "Varus",
+                "level": 4
+            },
+            {
+                "name": "Xayah",
+                "id": "Xayah",
+                "level": 4
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 5
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 4
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 4
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 5
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 6
+            },
+            {
+                "name": "MasterYi",
+                "id": "MasterYi",
+                "level": 6
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 3
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 6
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 5
+            },
+            {
+                "name": "Thresh",
+                "id": "Thresh",
+                "level": 4
+            },
+            {
+                "name": "Cassiopeia",
+                "id": "Cassiopeia",
+                "level": 7
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 8
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 4
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 3
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 6
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 2
+            },
+            {
+                "name": "Xerath",
+                "id": "Xerath",
+                "level": 7
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 5
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 1
+            },
+            {
+                "name": "Tryndamere",
+                "id": "Tryndamere",
+                "level": 4
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 4
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 2
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 3
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 3
+            },
+            {
+                "name": "Kalista",
+                "id": "Kalista",
+                "level": 2
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 2
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 3
+            },
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 4
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 3
+            },
+            {
+                "name": "Vi",
+                "id": "Vi",
+                "level": 9
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 3
+            },
+            {
+                "name": "Rell",
+                "id": "Rell",
+                "level": 7
+            },
+            {
+                "name": "Dr.Mundo",
+                "id": "DrMundo",
+                "level": 2
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 6
+            },
+            {
+                "name": "Aatrox",
+                "id": "Aatrox",
+                "level": 2
+            },
+            {
+                "name": "Katarina",
+                "id": "Katarina",
+                "level": 3
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 2
+            },
+            {
+                "name": "Vladimir",
+                "id": "Vladimir",
+                "level": 2
+            },
+            {
+                "name": "Gnar",
+                "id": "Gnar",
+                "level": 2
+            },
+            {
+                "name": "Nami",
+                "id": "Nami",
+                "level": 4
+            },
+            {
+                "name": "Kai'Sa",
+                "id": "Kaisa",
+                "level": 4
+            },
+            {
+                "name": "Viego",
+                "id": "Viego",
+                "level": 6
+            },
+            {
+                "name": "Jax",
+                "id": "Jax",
+                "level": 7
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 3
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 4
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 6
+            },
+            {
+                "name": "Rakan",
+                "id": "Rakan",
+                "level": 6
+            },
+            {
+                "name": "Anivia",
+                "id": "Anivia",
+                "level": 4
+            },
+            {
+                "name": "Irelia",
+                "id": "Irelia",
+                "level": 6
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 5
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 7
+            },
+            {
+                "name": "Janna",
+                "id": "Janna",
+                "level": 6
+            },
+            {
+                "name": "Yone",
+                "id": "Yone",
+                "level": 4
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 4
+            },
+            {
+                "name": "Azir",
+                "id": "Azir",
+                "level": 5
+            },
+            {
+                "name": "Evelynn",
+                "id": "Evelynn",
+                "level": 4
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 1
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 5
+            },
+            {
+                "name": "Ekko",
+                "id": "Ekko",
+                "level": 3
+            },
+            {
+                "name": "Olaf",
+                "id": "Olaf",
+                "level": 5
+            },
+            {
+                "name": "Ezreal",
+                "id": "Ezreal",
+                "level": 3
+            },
+            {
+                "name": "Lulu",
+                "id": "Lulu",
+                "level": 6
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 4
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 5
+            },
+            {
+                "name": "Lissandra",
+                "id": "Lissandra",
+                "level": 2
+            },
+            {
+                "name": "Nocturne",
+                "id": "Nocturne",
+                "level": 3
+            },
+            {
+                "name": "Garen",
+                "id": "Garen",
+                "level": 6
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 3
+            },
+            {
+                "name": "Samira",
+                "id": "Samira",
+                "level": 5
+            },
+            {
+                "name": "Yuumi",
+                "id": "Yuumi",
+                "level": 2
+            },
+            {
+                "name": "Poppy",
+                "id": "Poppy",
+                "level": 7
+            },
+            {
+                "name": "Tristana",
+                "id": "Tristana",
+                "level": 6
+            },
+            {
+                "name": "Sett",
+                "id": "Sett",
+                "level": 3
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 4
+            },
+            {
+                "name": "Lillia",
+                "id": "Lillia",
+                "level": 2
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 3
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 3
+            },
+            {
+                "name": "JarvanIV",
+                "id": "JarvanIV",
+                "level": 6
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 6
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 2
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 3
+            },
+            {
+                "name": "Shaco",
+                "id": "Shaco",
+                "level": 4
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 5
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 1
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 8
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 3
+            },
+            {
+                "name": "Kled",
+                "id": "Kled",
+                "level": 2
+            },
+            {
+                "name": "Camille",
+                "id": "Camille",
+                "level": 3
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 1
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 3
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 4
+            },
+            {
+                "name": "Shyvana",
+                "id": "Shyvana",
+                "level": 8
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 9
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 5
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 3
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 3
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 1
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 3
+            },
+            {
+                "name": "Graves",
+                "id": "Graves",
+                "level": 3
+            },
+            {
+                "name": "Volibear",
+                "id": "Volibear",
+                "level": 3
+            },
+            {
+                "name": "Gwen",
+                "id": "Gwen",
+                "level": 5
+            },
+            {
+                "name": "Sivir",
+                "id": "Sivir",
+                "level": 4
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 5
+            },
+            {
+                "name": "Syndra",
+                "id": "Syndra",
+                "level": 3
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 2
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 6
+            },
+            {
+                "name": "Quinn",
+                "id": "Quinn",
+                "level": 4
+            },
+            {
+                "name": "Diana",
+                "id": "Diana",
+                "level": 2
+            },
+            {
+                "name": "Rammus",
+                "id": "Rammus",
+                "level": 3
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 7
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 2
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 2
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 4
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 1
+            },
+            {
+                "name": "Gangplank",
+                "id": "Gangplank",
+                "level": 4
+            },
+            {
+                "name": "Rek'Sai",
+                "id": "RekSai",
+                "level": 2
+            },
+            {
+                "name": "Seraphine",
+                "id": "Seraphine",
+                "level": 1
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 2
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 3
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 3
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 4
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 4
+            },
+            {
+                "name": "Cho'Gath",
+                "id": "Chogath",
+                "level": 4
+            },
+            {
+                "name": "Rengar",
+                "id": "Rengar",
+                "level": 2
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 4
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 2
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 7
+            },
+            {
+                "name": "Nunu&Willump",
+                "id": "Nunu",
+                "level": 1
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 3
+            },
+            {
+                "name": "Blitzcrank",
+                "id": "Blitzcrank",
+                "level": 6
+            },
+            {
+                "name": "Nilah",
+                "id": "Nilah",
+                "level": 1
+            },
+            {
+                "name": "Bel'Veth",
+                "id": "Belveth",
+                "level": 1
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-06-07T13:52:53.983Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/161591366277791744/aefb2bb3a3d21edf5c7e094da8f18a63.webp?size=1024"
+    },
+    "195142260243955712": {
+        "inventory": [
+            {
+                "name": "Dr.Mundo",
+                "level": 7,
+                "id": "DrMundo"
+            },
+            {
+                "name": "Olaf",
+                "level": 1,
+                "id": "Olaf"
+            },
+            {
+                "name": "Corki",
+                "level": 4,
+                "id": "Corki"
+            },
+            {
+                "name": "MasterYi",
+                "level": 2,
+                "id": "MasterYi"
+            },
+            {
+                "name": "Xayah",
+                "level": 1,
+                "id": "Xayah"
+            },
+            {
+                "name": "Rengar",
+                "level": 1,
+                "id": "Rengar"
+            },
+            {
+                "name": "Rek'Sai",
+                "level": 1,
+                "id": "RekSai"
+            },
+            {
+                "name": "Draven",
+                "level": 3,
+                "id": "Draven"
+            },
+            {
+                "name": "Lissandra",
+                "level": 1,
+                "id": "Lissandra"
+            },
+            {
+                "name": "Nunu&Willump",
+                "level": 4,
+                "id": "Nunu"
+            },
+            {
+                "name": "Zoe",
+                "id": "Zoe",
+                "level": 3
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 1
+            },
+            {
+                "name": "Azir",
+                "id": "Azir",
+                "level": 1
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 2
+            },
+            {
+                "name": "Diana",
+                "id": "Diana",
+                "level": 2
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 2
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 4
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 2
+            },
+            {
+                "name": "Taliyah",
+                "id": "Taliyah",
+                "level": 2
+            },
+            {
+                "name": "Lux",
+                "id": "Lux",
+                "level": 1
+            },
+            {
+                "name": "Warwick",
+                "id": "Warwick",
+                "level": 3
+            },
+            {
+                "name": "Malphite",
+                "id": "Malphite",
+                "level": 2
+            },
+            {
+                "name": "Gangplank",
+                "id": "Gangplank",
+                "level": 4
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 3
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 4
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 3
+            },
+            {
+                "name": "Ryze",
+                "id": "Ryze",
+                "level": 1
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 3
+            },
+            {
+                "name": "Ezreal",
+                "id": "Ezreal",
+                "level": 2
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 1
+            },
+            {
+                "name": "Vayne",
+                "id": "Vayne",
+                "level": 2
+            },
+            {
+                "name": "Qiyana",
+                "id": "Qiyana",
+                "level": 2
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 1
+            },
+            {
+                "name": "Irelia",
+                "id": "Irelia",
+                "level": 1
+            },
+            {
+                "name": "Kayle",
+                "id": "Kayle",
+                "level": 1
+            },
+            {
+                "name": "Poppy",
+                "id": "Poppy",
+                "level": 6
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 1
+            },
+            {
+                "name": "Annie",
+                "id": "Annie",
+                "level": 1
+            },
+            {
+                "name": "LeBlanc",
+                "id": "Leblanc",
+                "level": 3
+            },
+            {
+                "name": "Shaco",
+                "id": "Shaco",
+                "level": 1
+            },
+            {
+                "name": "AurelionSol",
+                "id": "AurelionSol",
+                "level": 3
+            },
+            {
+                "name": "Thresh",
+                "id": "Thresh",
+                "level": 1
+            },
+            {
+                "name": "Neeko",
+                "id": "Neeko",
+                "level": 3
+            },
+            {
+                "name": "Kai'Sa",
+                "id": "Kaisa",
+                "level": 1
+            },
+            {
+                "name": "Pantheon",
+                "id": "Pantheon",
+                "level": 1
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 2
+            },
+            {
+                "name": "Amumu",
+                "id": "Amumu",
+                "level": 2
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 1
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 1
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 4
+            },
+            {
+                "name": "Ashe",
+                "id": "Ashe",
+                "level": 1
+            },
+            {
+                "name": "Hecarim",
+                "id": "Hecarim",
+                "level": 1
+            },
+            {
+                "name": "TwistedFate",
+                "id": "TwistedFate",
+                "level": 1
+            },
+            {
+                "name": "MissFortune",
+                "id": "MissFortune",
+                "level": 1
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 1
+            },
+            {
+                "name": "Tristana",
+                "id": "Tristana",
+                "level": 1
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 2
+            },
+            {
+                "name": "Ekko",
+                "id": "Ekko",
+                "level": 3
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 2
+            },
+            {
+                "name": "Urgot",
+                "id": "Urgot",
+                "level": 2
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 2
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 1
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 1
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 1
+            },
+            {
+                "name": "Soraka",
+                "id": "Soraka",
+                "level": 1
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 3
+            },
+            {
+                "name": "Singed",
+                "id": "Singed",
+                "level": 1
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 2
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 1
+            },
+            {
+                "name": "Kayn",
+                "id": "Kayn",
+                "level": 2
+            },
+            {
+                "name": "Aatrox",
+                "id": "Aatrox",
+                "level": 2
+            },
+            {
+                "name": "Rakan",
+                "id": "Rakan",
+                "level": 4
+            },
+            {
+                "name": "Vex",
+                "id": "Vex",
+                "level": 1
+            },
+            {
+                "name": "Leona",
+                "id": "Leona",
+                "level": 1
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 1
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 2
+            },
+            {
+                "name": "Evelynn",
+                "id": "Evelynn",
+                "level": 2
+            },
+            {
+                "name": "Cassiopeia",
+                "id": "Cassiopeia",
+                "level": 2
+            },
+            {
+                "name": "Darius",
+                "id": "Darius",
+                "level": 1
+            },
+            {
+                "name": "Kled",
+                "id": "Kled",
+                "level": 2
+            },
+            {
+                "name": "Janna",
+                "id": "Janna",
+                "level": 1
+            },
+            {
+                "name": "Tryndamere",
+                "id": "Tryndamere",
+                "level": 1
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 1
+            },
+            {
+                "name": "Aphelios",
+                "id": "Aphelios",
+                "level": 2
+            },
+            {
+                "name": "Elise",
+                "id": "Elise",
+                "level": 1
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 1
+            },
+            {
+                "name": "JarvanIV",
+                "id": "JarvanIV",
+                "level": 1
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 1
+            },
+            {
+                "name": "Kog'Maw",
+                "id": "KogMaw",
+                "level": 2
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 2
+            },
+            {
+                "name": "Talon",
+                "id": "Talon",
+                "level": 1
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 1
+            },
+            {
+                "name": "Nautilus",
+                "id": "Nautilus",
+                "level": 1
+            },
+            {
+                "name": "Rell",
+                "id": "Rell",
+                "level": 2
+            },
+            {
+                "name": "Alistar",
+                "id": "Alistar",
+                "level": 3
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 1
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 1
+            },
+            {
+                "name": "Vladimir",
+                "id": "Vladimir",
+                "level": 1
+            },
+            {
+                "name": "Sion",
+                "id": "Sion",
+                "level": 1
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 1
+            },
+            {
+                "name": "Kha'Zix",
+                "id": "Khazix",
+                "level": 1
+            },
+            {
+                "name": "Kennen",
+                "id": "Kennen",
+                "level": 1
+            },
+            {
+                "name": "Gwen",
+                "id": "Gwen",
+                "level": 2
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 1
+            },
+            {
+                "name": "Varus",
+                "id": "Varus",
+                "level": 1
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 1
+            },
+            {
+                "name": "Morgana",
+                "id": "Morgana",
+                "level": 2
+            },
+            {
+                "name": "Yone",
+                "id": "Yone",
+                "level": 1
+            },
+            {
+                "name": "Ziggs",
+                "id": "Ziggs",
+                "level": 2
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 2
+            },
+            {
+                "name": "Quinn",
+                "id": "Quinn",
+                "level": 1
+            },
+            {
+                "name": "Fizz",
+                "id": "Fizz",
+                "level": 1
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 1
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 1
+            },
+            {
+                "name": "Pyke",
+                "id": "Pyke",
+                "level": 1
+            },
+            {
+                "name": "Shyvana",
+                "id": "Shyvana",
+                "level": 1
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 1
+            },
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2022-10-29T07:32:14.927Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/195142260243955712/1e0fa1f9685f0e4909b891f41f2cc93a.webp?size=1024"
+    },
+    "161880954141540352": {
+        "inventory": [
+            {
+                "name": "Kayn",
+                "level": 3,
+                "id": "Kayn"
+            },
+            {
+                "name": "Jax",
+                "level": 2,
+                "id": "Jax"
+            },
+            {
+                "name": "Shyvana",
+                "level": 1,
+                "id": "Shyvana"
+            },
+            {
+                "name": "Soraka",
+                "level": 2,
+                "id": "Soraka"
+            },
+            {
+                "name": "Kayle",
+                "level": 3,
+                "id": "Kayle"
+            },
+            {
+                "name": "Zilean",
+                "level": 1,
+                "id": "Zilean"
+            },
+            {
+                "name": "Viego",
+                "level": 2,
+                "id": "Viego"
+            },
+            {
+                "name": "Ekko",
+                "level": 1,
+                "id": "Ekko"
+            },
+            {
+                "name": "Singed",
+                "level": 2,
+                "id": "Singed"
+            },
+            {
+                "name": "LeBlanc",
+                "level": 3,
+                "id": "Leblanc"
+            },
+            {
+                "name": "Kled",
+                "level": 4,
+                "id": "Kled"
+            },
+            {
+                "name": "Talon",
+                "level": 1,
+                "id": "Talon"
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 2
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 2
+            },
+            {
+                "name": "Vayne",
+                "id": "Vayne",
+                "level": 1
+            },
+            {
+                "name": "Gnar",
+                "id": "Gnar",
+                "level": 1
+            },
+            {
+                "name": "Nami",
+                "id": "Nami",
+                "level": 1
+            },
+            {
+                "name": "Sivir",
+                "id": "Sivir",
+                "level": 1
+            },
+            {
+                "name": "MasterYi",
+                "id": "MasterYi",
+                "level": 1
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 1
+            },
+            {
+                "name": "Ivern",
+                "id": "Ivern",
+                "level": 1
+            },
+            {
+                "name": "Jinx",
+                "id": "Jinx",
+                "level": 1
+            },
+            {
+                "name": "TahmKench",
+                "id": "TahmKench",
+                "level": 1
+            },
+            {
+                "name": "Wukong",
+                "id": "MonkeyKing",
+                "level": 1
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 1
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 3
+            },
+            {
+                "name": "Kindred",
+                "id": "Kindred",
+                "level": 2
+            },
+            {
+                "name": "Gragas",
+                "id": "Gragas",
+                "level": 1
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 1
+            },
+            {
+                "name": "Malzahar",
+                "id": "Malzahar",
+                "level": 1
+            },
+            {
+                "name": "Xayah",
+                "id": "Xayah",
+                "level": 2
+            },
+            {
+                "name": "Azir",
+                "id": "Azir",
+                "level": 1
+            },
+            {
+                "name": "Brand",
+                "id": "Brand",
+                "level": 1
+            },
+            {
+                "name": "Ryze",
+                "id": "Ryze",
+                "level": 1
+            },
+            {
+                "name": "Twitch",
+                "id": "Twitch",
+                "level": 1
+            },
+            {
+                "name": "Fiddlesticks",
+                "id": "Fiddlesticks",
+                "level": 3
+            },
+            {
+                "name": "Rumble",
+                "id": "Rumble",
+                "level": 1
+            },
+            {
+                "name": "Renekton",
+                "id": "Renekton",
+                "level": 1
+            },
+            {
+                "name": "Vel'Koz",
+                "id": "Velkoz",
+                "level": 1
+            },
+            {
+                "name": "Nidalee",
+                "id": "Nidalee",
+                "level": 1
+            },
+            {
+                "name": "Qiyana",
+                "id": "Qiyana",
+                "level": 1
+            },
+            {
+                "name": "Janna",
+                "id": "Janna",
+                "level": 1
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 1
+            },
+            {
+                "name": "Viktor",
+                "id": "Viktor",
+                "level": 1
+            },
+            {
+                "name": "Fiora",
+                "id": "Fiora",
+                "level": 1
+            },
+            {
+                "name": "Zyra",
+                "id": "Zyra",
+                "level": 2
+            },
+            {
+                "name": "Quinn",
+                "id": "Quinn",
+                "level": 1
+            },
+            {
+                "name": "Rek'Sai",
+                "id": "RekSai",
+                "level": 1
+            },
+            {
+                "name": "Riven",
+                "id": "Riven",
+                "level": 1
+            },
+            {
+                "name": "Lillia",
+                "id": "Lillia",
+                "level": 1
+            },
+            {
+                "name": "Udyr",
+                "id": "Udyr",
+                "level": 2
+            },
+            {
+                "name": "Jayce",
+                "id": "Jayce",
+                "level": 1
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 1
+            },
+            {
+                "name": "Tryndamere",
+                "id": "Tryndamere",
+                "level": 1
+            },
+            {
+                "name": "Vi",
+                "id": "Vi",
+                "level": 1
+            },
+            {
+                "name": "Cho'Gath",
+                "id": "Chogath",
+                "level": 1
+            },
+            {
+                "name": "Caitlyn",
+                "id": "Caitlyn",
+                "level": 1
+            },
+            {
+                "name": "Senna",
+                "id": "Senna",
+                "level": 1
+            },
+            {
+                "name": "Illaoi",
+                "id": "Illaoi",
+                "level": 1
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 1
+            },
+            {
+                "name": "Sylas",
+                "id": "Sylas",
+                "level": 1
+            },
+            {
+                "name": "Heimerdinger",
+                "id": "Heimerdinger",
+                "level": 1
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 1
+            },
+            {
+                "name": "Sejuani",
+                "id": "Sejuani",
+                "level": 1
+            },
+            {
+                "name": "Corki",
+                "id": "Corki",
+                "level": 1
+            },
+            {
+                "name": "Rell",
+                "id": "Rell",
+                "level": 1
+            },
+            {
+                "name": "Zac",
+                "id": "Zac",
+                "level": 1
+            },
+            {
+                "name": "Galio",
+                "id": "Galio",
+                "level": 1
+            },
+            {
+                "name": "Yorick",
+                "id": "Yorick",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2022-08-03T13:09:12.463Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/161880954141540352/f81e2ffe4242ed0cb85ee902c45b31b9.webp?size=1024"
+    },
+    "296446432007946251": {
+        "inventory": [
+            {
+                "name": "Taric",
+                "level": 1,
+                "id": "Taric"
+            },
+            {
+                "name": "MissFortune",
+                "level": 1,
+                "id": "MissFortune"
+            },
+            {
+                "name": "Qiyana",
+                "level": 2,
+                "id": "Qiyana"
+            },
+            {
+                "name": "Rumble",
+                "level": 1,
+                "id": "Rumble"
+            },
+            {
+                "name": "Karma",
+                "id": "Karma",
+                "level": 1
+            },
+            {
+                "name": "Shen",
+                "id": "Shen",
+                "level": 1
+            },
+            {
+                "name": "Hecarim",
+                "id": "Hecarim",
+                "level": 1
+            },
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 1
+            },
+            {
+                "name": "XinZhao",
+                "id": "XinZhao",
+                "level": 1
+            },
+            {
+                "name": "Ornn",
+                "id": "Ornn",
+                "level": 1
+            },
+            {
+                "name": "Braum",
+                "id": "Braum",
+                "level": 1
+            },
+            {
+                "name": "Xayah",
+                "id": "Xayah",
+                "level": 1
+            },
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 1
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 1
+            },
+            {
+                "name": "Diana",
+                "id": "Diana",
+                "level": 1
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2022-06-21T13:53:41.381Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/296446432007946251/85e54daa7c9e7c278b0e37208c8e08ca.webp?size=1024"
+    },
+    "197446097730404353": {
+        "inventory": [
+            {
+                "name": "Amumu",
+                "level": 1,
+                "id": "Amumu"
+            },
+            {
+                "name": "Kassadin",
+                "id": "Kassadin",
+                "level": 1
+            },
+            {
+                "name": "Sona",
+                "id": "Sona",
+                "level": 1
+            },
+            {
+                "name": "Akshan",
+                "id": "Akshan",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-05-14T16:57:43.228Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/197446097730404353/95214f642d4b34e9b34f3f4aac197438.webp?size=1024"
+    },
+    "177363344397697024": {
+        "inventory": [
+            {
+                "name": "Jhin",
+                "id": "Jhin",
+                "level": 1
+            },
+            {
+                "name": "K'Sante",
+                "id": "KSante",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-05-02T20:40:25.958Z",
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/2.png"
+    },
+    "111641934535110656": {
+        "inventory": [
+            {
+                "name": "Ahri",
+                "id": "Ahri",
+                "level": 1
+            },
+            {
+                "name": "Shaco",
+                "id": "Shaco",
+                "level": 1
+            },
+            {
+                "name": "LeeSin",
+                "id": "LeeSin",
+                "level": 1
+            },
+            {
+                "name": "Yasuo",
+                "id": "Yasuo",
+                "level": 1
+            },
+            {
+                "name": "Swain",
+                "id": "Swain",
+                "level": 1
+            },
+            {
+                "name": "Kayle",
+                "id": "Kayle",
+                "level": 1
+            },
+            {
+                "name": "Orianna",
+                "id": "Orianna",
+                "level": 1
+            },
+            {
+                "name": "Karthus",
+                "id": "Karthus",
+                "level": 1
+            },
+            {
+                "name": "Blitzcrank",
+                "id": "Blitzcrank",
+                "level": 1
+            },
+            {
+                "name": "Lucian",
+                "id": "Lucian",
+                "level": 1
+            },
+            {
+                "name": "Skarner",
+                "id": "Skarner",
+                "level": 1
+            },
+            {
+                "name": "Veigar",
+                "id": "Veigar",
+                "level": 1
+            },
+            {
+                "name": "Taric",
+                "id": "Taric",
+                "level": 1
+            },
+            {
+                "name": "Teemo",
+                "id": "Teemo",
+                "level": 1
+            },
+            {
+                "name": "Mordekaiser",
+                "id": "Mordekaiser",
+                "level": 1
+            },
+            {
+                "name": "Cho'Gath",
+                "id": "Chogath",
+                "level": 1
+            },
+            {
+                "name": "Zilean",
+                "id": "Zilean",
+                "level": 1
+            },
+            {
+                "name": "Maokai",
+                "id": "Maokai",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2023-06-02T13:23:22.847Z",
+        "avatarUrl": "https://cdn.discordapp.com/embed/avatars/3.png"
+    },
+    "484747709493018625": {
+        "inventory": [
+            {
+                "name": "Zed",
+                "id": "Zed",
+                "level": 1
+            },
+            {
+                "name": "Akali",
+                "id": "Akali",
+                "level": 1
+            }
+        ],
+        "lastRequestDate": "2022-12-01T13:39:00.626Z",
+        "avatarUrl": "https://cdn.discordapp.com/avatars/484747709493018625/29b55e7b04f28095c075ab8d6f586e84.webp?size=1024"
+    }
+}

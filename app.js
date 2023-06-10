@@ -11,33 +11,33 @@ const getAsync = promisify(redisClient.get).bind(redisClient);
 const USERS_LIST = "users";
 const WAIT_TIME = 1000 * 60 * 60 * 3;
 
-const getUserData = async (userName, usersList = {}) => {
-  if (usersList && usersList[userName]) {
-    return usersList[userName];
+const getUserData = async (user, usersList = {}) => {
+  if (usersList && usersList[user.id]) {
+    return usersList[user.id];
   } else {
     const usersEnhanced = {
       ...usersList,
-      [userName]: {
+      [user.id]: {
         inventory: [],
       },
     };
     await setData(USERS_LIST, usersEnhanced);
-    return usersEnhanced[userName];
+    return usersEnhanced[user.id];
   }
 };
 
-const fetchChampion = async (userName, avatar) => {
+const fetchChampion = async (user, avatar) => {
   try{
     const usersList = JSON.parse(await getAsync(USERS_LIST)) || {};
-  const userData = (await getUserData(userName, usersList)) || {};
+  const userData = (await getUserData(user, usersList)) || {};
   if (
-    userData &&
+    userData && userData.lastRequestDate &&
     new Date(userData.lastRequestDate).getTime() > Date.now() - WAIT_TIME
   ) {
     return {
       isAllowed: false,
       reason:
-        `Sorry **${userName}**, you have to wait ` +
+        `Sorry **${user.username}**, you have to wait ` +
         parseMillisecondsIntoReadableTime(
           WAIT_TIME -
             Math.abs(new Date(userData.lastRequestDate).getTime() - Date.now())
@@ -59,9 +59,10 @@ const fetchChampion = async (userName, avatar) => {
   }
   userData.lastRequestDate = new Date();
   userData.avatarUrl = avatar;
+  userData.username = user.username;
   await setData(USERS_LIST, {
     ...usersList,
-    [userName]: userData,
+    [user.id]: userData,
   });
   return {
     isAllowed: true,
@@ -78,10 +79,10 @@ const setData = async (key, data) => {
   redisClient.set(key, JSON.stringify(data));
 };
 
-const getInventory = async (userName) => {
+const getInventory = async (user) => {
   try{
     const usersList = JSON.parse(await getAsync(USERS_LIST)) || [];
-  const userData = await getUserData(userName, usersList);
+  const userData = await getUserData(user, usersList);
   const inventory = userData.inventory;
   return inventory
     .map((item) => `**${item.name}** Lv. ${item.level}`)

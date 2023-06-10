@@ -1,25 +1,26 @@
 const token = process.env.token;
-const { Client, Intents, MessageEmbed } = require("discord.js");
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const { Client, GatewayIntentBits, EmbedBuilder, Events } = require("discord.js");
+const client = new Client({ intents: [GatewayIntentBits.GuildMessages, GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildPresences] });
 const { fetchChampion, getInventory } = require("./app");
 const COMMANDS = {
   CHAMPION: new Set(["!champion", "!champ", "!c", '!C', '!ב']),
   INVENTORY: new Set(["!inventory", "!inv", "!i"]),
 };
-
-client.on("ready", () => {
+const LOLBOT_ID = '929764634423095296'
+client.on(Events.ClientReady, () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on("message", async (msg) => {
+client.on(Events.MessageCreate, async (msg) => {
   try {
-    if (msg.author.username !== "lolbot") {
+    const userId = msg.author.id;
+    if (userId!== LOLBOT_ID) {
       if (COMMANDS.CHAMPION.has(msg.content)) {
         let user = msg.mentions.users.first() || msg.author;
         let avatar = user.displayAvatarURL({ size: 1024, dynamic: true });
-        const result = await fetchChampion(msg.author.username, avatar);
+        const result = await fetchChampion(msg.author, avatar);
         const { name, level, isAllowed, reason, id } = result;
-        const embed = new MessageEmbed();
+        const embed = new EmbedBuilder();
 
         if (!isAllowed) {
           embed.setDescription(reason).setColor("#ff0000");
@@ -33,19 +34,19 @@ client.on("message", async (msg) => {
           embed.color = 0x00ff00;
           console.log(loadingSplashUrl);
           embed.setImage(loadingSplashUrl);
-          embed.setFooter(`Level ${level}`);
+          embed.setFooter({text: `Level ${level}`});
           console.log(
             msg.author.username + " has requested a champion, he got " + name
           );
         }
-        return msg.reply(embed);
+        return msg.reply({embeds: [embed]});
       }
       if (COMMANDS.INVENTORY.has(msg.content)) {
-        const invetoryList = await getInventory(msg.author.username);
-        const embed = new MessageEmbed();
+        const invetoryList = await getInventory(msg.author);
+        const embed = new EmbedBuilder();
         embed.color = 0x00ff00;
         embed.setDescription(
-          `Hey **${msg.author.username}**, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)}): (Total ${invetoryList.split("\n").length
+          `Hey @${msg.author.username}, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.username)}): (Total ${invetoryList.split("\n").length
           } Champions)` 
         );
         console.log(
@@ -54,12 +55,12 @@ client.on("message", async (msg) => {
           invetoryList.split("\n").length +
           " champions"
         );
-        return msg.reply(embed);
+        return msg.reply({embeds: [embed]});
       }
     }
   }
   catch (e) {
-    console.error('general error:', JSON.stringify(e))
+    console.error('general error:', JSON.stringify(e.message))
   }
 });
 
@@ -67,5 +68,5 @@ client.login(token);
 
 
 process.on('uncaughtException', (error)=> {
-  console.error("uncaughtException: ", JSON.stringify(error))
+  console.error("uncaughtException: ", JSON.stringify(error.message))
 })

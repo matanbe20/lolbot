@@ -1,10 +1,23 @@
 const fetch = require('isomorphic-unfetch');
 const { randomInteger } = require('./utils');
 
+
+const fetchLatestApiVersion = async () => {
+  const fallbackVersion = '13.1.1'
+  try {
+    const versionsResponse = await fetch('https://ddragon.leagueoflegends.com/api/versions.json');
+    const versions = await versionsResponse.json();
+    return versions.at(0) || fallbackVersion;
+  } catch (err) {
+    return fallbackVersion; // fallback version
+  }
+}
+
 const fetchChampions = async () => {
   //TODO: add last version check before ---- https://ddragon.leagueoflegends.com/api/versions.json
+  const api_version = await fetchLatestApiVersion();
   const res = await fetch(
-    "http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion.json"
+    `http://ddragon.leagueoflegends.com/cdn/${api_version}/data/en_US/champion.json`
   );
   const result = await res.json();
   const champions = result.data;
