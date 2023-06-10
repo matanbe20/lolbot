@@ -34,7 +34,7 @@ client.on(Events.MessageCreate, async (msg) => {
           embed.color = 0x00ff00;
           console.log(loadingSplashUrl);
           embed.setImage(loadingSplashUrl);
-          embed.setFooter({text: `Level **${level}**`});
+          embed.setFooter({text: `Level ${level}`});
           console.log(
             msg.author.username + " has requested a champion, he got " + name
           );
