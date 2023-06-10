@@ -34,7 +34,7 @@ client.on(Events.MessageCreate, async (msg) => {
           embed.color = 0x00ff00;
           console.log(loadingSplashUrl);
           embed.setImage(loadingSplashUrl);
-          embed.setFooter({text: `Level ${level}`});
+          embed.setFooter({text: `Level **${level}**`});
           console.log(
             msg.author.username + " has requested a champion, he got " + name
           );
@@ -46,7 +46,7 @@ client.on(Events.MessageCreate, async (msg) => {
         const embed = new EmbedBuilder();
         embed.color = 0x00ff00;
         embed.setDescription(
-          `Hey @${msg.author.username}, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.id)}): (Total ${invetoryList.split("\n").length
+          `Hey **${msg.author.username}**, here's your [**inventory**](https://lolbotviewer.vercel.app/inventory?user=${encodeURI(msg.author.id)}): (Total ${invetoryList.split("\n").length
           } Champions)` 
         );
         console.log(
