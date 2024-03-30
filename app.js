@@ -9,7 +9,8 @@ const { fetchChampions } = require("./repository");
 const { parseMillisecondsIntoReadableTime } = require("./utils");
 const getAsync = promisify(redisClient.get).bind(redisClient);
 const USERS_LIST = "users";
-const WAIT_TIME = 1000 * 60 * 60 * 3;
+const HOURS = 3;
+const WAIT_TIME = 1000 * 60 * 60 * HOURS;
 
 const getUserData = async (user, usersList = {}) => {
   if (usersList && usersList[user.id]) {
