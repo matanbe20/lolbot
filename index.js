@@ -83,8 +83,3 @@ process.on('SIGABRT', (error)=> {
   console.error("SIGABRT: ", JSON.stringify(error.message))
 })
 
-process.on('SIGSTOP', (error)=> {
-  console.error("SIGSTOP: ", JSON.stringify(error.message))
-})
-
-
