@@ -1,7 +1,7 @@
-var fs = require("fs");
-var util = require("util");
-var log_file = fs.createWriteStream(__dirname + "/debug.log", { flags: "w" });
-var log_stdout = process.stdout;
+const fs = require("fs");
+const util = require("util");
+const log_file = fs.createWriteStream(__dirname + "/debug.log", { flags: "w" });
+const log_stdout = process.stdout;
 
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -18,26 +18,26 @@ findChampionIndex = (champion, inventory = []) => {
 
 function parseMillisecondsIntoReadableTime(milliseconds) {
   //Get hours from milliseconds
-  var hours = milliseconds / (1000 * 60 * 60);
-  var absoluteHours = Math.floor(hours);
-  var h = absoluteHours > 9 ? absoluteHours : absoluteHours;
+  const hours = milliseconds / (1000 * 60 * 60);
+  const absoluteHours = Math.floor(hours);
+  const h = absoluteHours > 9 ? absoluteHours : absoluteHours;
 
   //Get remainder from hours and convert to minutes
-  var minutes = (hours - absoluteHours) * 60;
-  var absoluteMinutes = Math.floor(minutes);
-  var m = absoluteMinutes > 9 ? absoluteMinutes : "0" + absoluteMinutes;
+  const minutes = (hours - absoluteHours) * 60;
+  const absoluteMinutes = Math.floor(minutes);
+  const m = absoluteMinutes > 9 ? absoluteMinutes : "0" + absoluteMinutes;
 
   //Get remainder from minutes and convert to seconds
-  var seconds = (minutes - absoluteMinutes) * 60;
-  var absoluteSeconds = Math.floor(seconds);
-  var s = absoluteSeconds > 9 ? absoluteSeconds : "0" + absoluteSeconds;
+  const seconds = (minutes - absoluteMinutes) * 60;
+  const absoluteSeconds = Math.floor(seconds);
+  const s = absoluteSeconds > 9 ? absoluteSeconds : "0" + absoluteSeconds;
 
   return "**" + h + " hours, " + m + " minutes & " + s + " seconds**";
 }
 
 function getTime() {
-  var currentdate = new Date();
-  var datetime =
+  const currentdate = new Date();
+  const datetime =
     currentdate.getDate() +
     "/" +
     (currentdate.getMonth() + 1) +
