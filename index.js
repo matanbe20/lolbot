@@ -70,3 +70,25 @@ client.login(token);
 process.on('uncaughtException', (error)=> {
   console.error("uncaughtException: ", JSON.stringify(error.message))
 })
+
+process.on('unhandledRejection', (error)=> {
+  console.error("unhandledRejection: ", JSON.stringify(error.message))
+})
+
+process.on('SIGTERM', (error)=> {
+  console.error("SIGTERM: ", JSON.stringify(error.message))
+})
+
+process.on('SIGABRT', (error)=> {
+  console.error("SIGABRT: ", JSON.stringify(error.message))
+})
+
+process.on('SIGSTOP', (error)=> {
+  console.error("SIGSTOP: ", JSON.stringify(error.message))
+})
+
+process.on('SIGKILL', (error)=> {
+  console.error("SIGKILL: ", JSON.stringify(error.message))
+})
+
+
