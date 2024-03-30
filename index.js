@@ -87,8 +87,4 @@ process.on('SIGSTOP', (error)=> {
   console.error("SIGSTOP: ", JSON.stringify(error.message))
 })
 
-process.on('SIGKILL', (error)=> {
-  console.error("SIGKILL: ", JSON.stringify(error.message))
-})
-
 
