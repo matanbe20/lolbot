@@ -33,4 +33,14 @@ const fetchChampions = async () => {
   return championsArray[randomChampIndex];
 };
 
-module.exports = { fetchChampions };
+const fetchChampionDetails = async (championId) => {
+  const api_version = await fetchLatestApiVersion();
+  const res = await fetch(
+    `http://ddragon.leagueoflegends.com/cdn/${api_version}/data/en_US/champion/${championId}.json`
+  );
+  const result = await res.json();
+  const championDetails = result.data[championId];
+  return championDetails.skins;
+};
+
+module.exports = { fetchChampions, fetchChampionDetails };

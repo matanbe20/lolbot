@@ -5,8 +5,8 @@ const redisClient = redis.createClient({
   password: process.env.db_pass,
 });
 const { promisify } = require("util");
-const { fetchChampions } = require("./repository");
-const { parseMillisecondsIntoReadableTime } = require("./utils");
+const { fetchChampions, fetchChampionDetails } = require("./repository");
+const { parseMillisecondsIntoReadableTime, randomInteger } = require("./utils");
 const getAsync = promisify(redisClient.get).bind(redisClient);
 const USERS_LIST = "users";
 const HOURS = 3;
@@ -49,14 +49,31 @@ const fetchChampion = async (user, avatar) => {
   let { name, id } = await fetchChampions();
   const championName = name.replace(/\s/g, "");
   let championIndex = findChampionIndex(championName, userData.inventory);
+
+  let skins = [];
+  try {
+    skins = await fetchChampionDetails(id);
+  } catch (error) {
+    console.error("Failed to fetch champion skins:", error);
+  }
+
+  let selectedSkin = { name: "Default", num: 0 }; // Default skin
+
+  if (skins && skins.length > 0) {
+    const randomSkinIndex = randomInteger(0, skins.length - 1);
+    selectedSkin = skins[randomSkinIndex];
+  }
+
   if (championIndex === -1) {
     userData.inventory.push({
       name: championName,
       id,
       level: 1,
+      skin: { name: selectedSkin.name, num: selectedSkin.num },
     });
   } else {
     userData.inventory[championIndex].level += 1;
+    userData.inventory[championIndex].skin = { name: selectedSkin.name, num: selectedSkin.num };
   }
   userData.lastRequestDate = new Date();
   userData.avatarUrl = avatar;
@@ -70,6 +87,8 @@ const fetchChampion = async (user, avatar) => {
     name,
     id,
     level: championIndex === -1 ? 1 : userData.inventory[championIndex].level,
+    skinName: selectedSkin.name,
+    skinNum: selectedSkin.num,
   };
   }catch(e){
     console.error("Error while fetchChampion", JSON.stringify(e))
