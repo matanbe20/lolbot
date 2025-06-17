@@ -19,24 +19,24 @@ client.on(Events.MessageCreate, async (msg) => {
         let user = msg.mentions.users.first() || msg.author;
         let avatar = user.displayAvatarURL({ size: 1024, dynamic: true });
         const result = await fetchChampion(msg.author, avatar);
-        const { name, level, isAllowed, reason, id } = result;
+const { name, level, isAllowed, reason, id, skinName, skinNum } = result;
         const embed = new EmbedBuilder();
 
         if (!isAllowed) {
           embed.setDescription(reason).setColor("#ff0000");
           console.log(reason);
         } else {
-          const loadingSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_0.jpg`;
+  const skinSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skinNum}.jpg`;
           embed.setDescription(
             `Nice, **${msg.author.username
-            }** ! You've caught [**${name}**](https://lol.gamepedia.com/${encodeURI(name)})`
+    }** ! You've caught [**${skinName}** (${name})](https://lol.gamepedia.com/${encodeURI(name)})`
           );
           embed.color = 0x00ff00;
-          console.log(loadingSplashUrl);
-          embed.setImage(loadingSplashUrl);
+  console.log(skinSplashUrl);
+  embed.setImage(skinSplashUrl);
           embed.setFooter({text: `Level ${level}`});
           console.log(
-            msg.author.username + " has requested a champion, he got " + name
+    `${msg.author.username} has requested a champion, he got ${skinName} (${name})`
           );
         }
         return msg.reply({embeds: [embed]});
