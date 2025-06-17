@@ -69,11 +69,23 @@ const fetchChampion = async (user, avatar) => {
       name: championName,
       id,
       level: 1,
-      skin: { name: selectedSkin.name, num: selectedSkin.num },
+      skins: [{ name: selectedSkin.name, num: selectedSkin.num }], // New structure
     });
   } else {
     userData.inventory[championIndex].level += 1;
-    userData.inventory[championIndex].skin = { name: selectedSkin.name, num: selectedSkin.num };
+    // Initialize skins array if it doesn't exist (for backward compatibility)
+    if (!Array.isArray(userData.inventory[championIndex].skins)) {
+      userData.inventory[championIndex].skins = [];
+    }
+    // Check if the selected skin already exists
+    const skinExists = userData.inventory[championIndex].skins.some(skin => skin.num === selectedSkin.num);
+    if (!skinExists) {
+      userData.inventory[championIndex].skins.push({ name: selectedSkin.name, num: selectedSkin.num });
+    }
+    // Remove old .skin property if it exists (optional cleanup, good for consistency)
+    if (userData.inventory[championIndex].hasOwnProperty('skin')) {
+      delete userData.inventory[championIndex].skin;
+    }
   }
   userData.lastRequestDate = new Date();
   userData.avatarUrl = avatar;
@@ -105,7 +117,10 @@ const getInventory = async (user) => {
   const userData = await getUserData(user, usersList);
   const inventory = userData.inventory;
   return inventory
-    .map((item) => `**${item.name}** Lv. ${item.level}`)
+    .map((item) => {
+      const skinCount = (Array.isArray(item.skins) ? item.skins.length : 0);
+      return `**${item.name}** Lv. ${item.level} (${skinCount} skins)`;
+    })
     .join("\n");
   }catch(e) {
     console.error("Error while getInventory", JSON.stringify(e))
