@@ -26,7 +26,7 @@ const { name, level, isAllowed, reason, id, skinName, skinNum } = result;
           embed.setDescription(reason).setColor("#ff0000");
           console.log(reason);
         } else {
-  const skinSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${id}_${skinNum}.jpg`;
+  const skinSplashUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${id}_${skinNum}.jpg`;
           embed.setDescription(
             `Nice, **${msg.author.username
     }** ! You've caught [**${skinName}** (${name})](https://lol.gamepedia.com/${encodeURI(name)})`
