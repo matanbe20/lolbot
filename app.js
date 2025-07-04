@@ -60,7 +60,7 @@ const fetchChampion = async (user, avatar) => {
   let selectedSkin = { name: "Default", num: 0 }; // Default skin
 
   if (skins && skins.length > 0) {
-    const randomSkinIndex = randomInteger(0, skins.length - 1);
+    const randomSkinIndex = randomInteger(1, skins.length - 1);
     selectedSkin = skins[randomSkinIndex];
   }
 
