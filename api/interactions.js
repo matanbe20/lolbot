@@ -30,7 +30,7 @@ async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
       };
     } else {
       const { name: champName, id: champId, level, skinName, skinNum } = result;
-      const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champId}_${skinNum}.jpg`;
+      const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`;
       embed = {
         title: `You got **${champName}**!`,
         description: `Level: **${level}**\nSkin: **${skinName}**`,
