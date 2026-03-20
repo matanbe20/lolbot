@@ -58,6 +58,40 @@ async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
   }
 }
 
+async function handleInventoryFollowup(interaction, discordUser) {
+  const patchUrl = `https://discord.com/api/v10/webhooks/${process.env.DISCORD_APPLICATION_ID}/${interaction.token}/messages/@original`;
+
+  try {
+    const inventoryText = await getInventory({
+      id: discordUser.id,
+      username: discordUser.username,
+    });
+
+    const embed = {
+      title: `${discordUser.username}'s Champion Inventory`,
+      description: inventoryText || "Your inventory is empty.",
+      color: 0x00cc44,
+      footer: { text: "View your full inventory at lolbotviewer.vercel.app" },
+    };
+
+    const patchRes = await fetch(patchUrl, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [embed] }),
+    });
+    if (!patchRes.ok) {
+      console.error("Discord PATCH failed:", patchRes.status, await patchRes.text());
+    }
+  } catch (err) {
+    console.error("Error in inventory followup:", err);
+    await fetch(patchUrl, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [{ description: "An error occurred.", color: 0xff0000 }] }),
+    });
+  }
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
@@ -91,22 +125,8 @@ module.exports = async function handler(req, res) {
     }
 
     if (name === "inventory") {
-      const inventoryText = await getInventory({
-        id: discordUser.id,
-        username: discordUser.username,
-      });
-
-      const embed = {
-        title: `${discordUser.username}'s Champion Inventory`,
-        description: inventoryText || "Your inventory is empty.",
-        color: 0x00cc44,
-        footer: { text: "View your full inventory at lolbotviewer.vercel.app" },
-      };
-
-      return res.status(200).json({
-        type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-        data: { embeds: [embed] },
-      });
+      waitUntil(handleInventoryFollowup(interaction, discordUser));
+      return res.status(200).json({ type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE });
     }
   }
 
