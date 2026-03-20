@@ -1,4 +1,5 @@
 const { InteractionType, InteractionResponseType, verifyKey } = require("discord-interactions");
+const { waitUntil } = require("@vercel/functions");
 const { fetchChampion, getInventory } = require("../app");
 
 module.exports.config = { api: { bodyParser: false } };
@@ -10,6 +11,51 @@ async function readRawBody(req) {
     req.on("end", () => resolve(Buffer.concat(chunks)));
     req.on("error", reject);
   });
+}
+
+async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
+  const patchUrl = `https://discord.com/api/v10/webhooks/${process.env.DISCORD_APPLICATION_ID}/${interaction.token}/messages/@original`;
+
+  try {
+    const result = await fetchChampion(
+      { id: discordUser.id, username: discordUser.username },
+      avatarUrl
+    );
+
+    let embed;
+    if (!result || !result.isAllowed) {
+      embed = {
+        description: result?.reason || "Something went wrong. Please try again.",
+        color: 0xff0000,
+      };
+    } else {
+      const { name: champName, id: champId, level, skinName, skinNum } = result;
+      embed = {
+        title: `You got **${champName}**!`,
+        description: `Level: **${level}**\nSkin: **${skinName}**`,
+        color: 0x0099ff,
+        image: {
+          url: `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`,
+        },
+      };
+    }
+
+    const patchRes = await fetch(patchUrl, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [embed] }),
+    });
+    if (!patchRes.ok) {
+      console.error("Discord PATCH failed:", patchRes.status, await patchRes.text());
+    }
+  } catch (err) {
+    console.error("Error in champion followup:", err);
+    await fetch(patchUrl, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [{ description: "An error occurred.", color: 0xff0000 }] }),
+    });
+  }
 }
 
 module.exports = async function handler(req, res) {
@@ -28,7 +74,6 @@ module.exports = async function handler(req, res) {
 
   const interaction = JSON.parse(rawBody.toString());
 
-  // Handle Discord's PING verification
   if (interaction.type === InteractionType.PING) {
     return res.status(200).json({ type: InteractionResponseType.PONG });
   }
@@ -41,54 +86,8 @@ module.exports = async function handler(req, res) {
       : null;
 
     if (name === "champion") {
-      // Defer immediately — fetchChampion makes external HTTP calls that can exceed 3s
-      res.status(200).json({ type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE });
-
-      try {
-        const result = await fetchChampion(
-          { id: discordUser.id, username: discordUser.username },
-          avatarUrl
-        );
-
-        let embed;
-        if (!result || !result.isAllowed) {
-          embed = {
-            description: result?.reason || "Something went wrong. Please try again.",
-            color: 0xff0000,
-          };
-        } else {
-          const { name: champName, id: champId, level, skinName, skinNum } = result;
-          const api_version = "13.1.1"; // fallback; champion image works with any recent version
-          embed = {
-            title: `You got **${champName}**!`,
-            description: `Level: **${level}**\nSkin: **${skinName}**`,
-            color: 0x0099ff,
-            image: {
-              url: `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`,
-            },
-          };
-        }
-
-        await fetch(
-          `https://discord.com/api/v10/webhooks/${process.env.DISCORD_APPLICATION_ID}/${interaction.token}/messages/@original`,
-          {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ embeds: [embed] }),
-          }
-        );
-      } catch (err) {
-        console.error("Error handling /champion followup:", err);
-        await fetch(
-          `https://discord.com/api/v10/webhooks/${process.env.DISCORD_APPLICATION_ID}/${interaction.token}/messages/@original`,
-          {
-            method: "PATCH",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ embeds: [{ description: "An error occurred.", color: 0xff0000 }] }),
-          }
-        );
-      }
-      return;
+      waitUntil(handleChampionFollowup(interaction, discordUser, avatarUrl));
+      return res.status(200).json({ type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE });
     }
 
     if (name === "inventory") {
@@ -101,9 +100,7 @@ module.exports = async function handler(req, res) {
         title: `${discordUser.username}'s Champion Inventory`,
         description: inventoryText || "Your inventory is empty.",
         color: 0x00cc44,
-        footer: {
-          text: "View your full inventory at lolbotviewer.vercel.app",
-        },
+        footer: { text: "View your full inventory at lolbotviewer.vercel.app" },
       };
 
       return res.status(200).json({
