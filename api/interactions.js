@@ -67,9 +67,14 @@ async function handleInventoryFollowup(interaction, discordUser) {
       username: discordUser.username,
     });
 
+    const maxLength = 4096;
+    let description = inventoryText || "Your inventory is empty.";
+    if (description.length > maxLength) {
+      description = description.slice(0, maxLength - 3) + "...";
+    }
     const embed = {
       title: `${discordUser.username}'s Champion Inventory`,
-      description: inventoryText || "Your inventory is empty.",
+      description,
       color: 0x00cc44,
       footer: { text: "View your full inventory at lolbotviewer.vercel.app" },
     };
