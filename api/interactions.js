@@ -30,13 +30,15 @@ async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
       };
     } else {
       const { name: champName, id: champId, level, skinName, skinNum } = result;
+      const skinUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`;
+      const defaultUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_0.jpg`;
+      const imageCheck = await fetch(skinUrl, { method: "HEAD" });
+      const imageUrl = imageCheck.ok ? skinUrl : defaultUrl;
       embed = {
         title: `You got **${champName}**!`,
         description: `Level: **${level}**\nSkin: **${skinName}**`,
         color: 0x0099ff,
-        image: {
-          url: `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`,
-        },
+        image: { url: imageUrl },
       };
     }
 
