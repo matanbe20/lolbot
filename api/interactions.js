@@ -29,9 +29,8 @@ async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
         color: 0xff0000,
       };
     } else {
-      const { name: champName, id: champId, numericId, level, skinName, skinNum } = result;
-      const skinId = Number(numericId) * 1000 + Number(skinNum);
-      const imageUrl = `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/${numericId}/${skinId}.jpg`;
+      const { name: champName, id: champId, level, skinName, skinNum } = result;
+      const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champId}_${skinNum}.jpg`;
       embed = {
         title: `You got **${champName}**!`,
         description: `Level: **${level}**\nSkin: **${skinName}**`,
