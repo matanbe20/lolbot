@@ -29,11 +29,12 @@ async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
         color: 0xff0000,
       };
     } else {
-      const { name: champName, id: champId, level, skinName, skinNum } = result;
-      const skinUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`;
-      const defaultUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_0.jpg`;
-      const imageCheck = await fetch(skinUrl, { method: "HEAD" });
-      const imageUrl = imageCheck.ok ? skinUrl : defaultUrl;
+      const { name: champName, id: champId, numericId, level, skinName, skinNum } = result;
+      const skinId = Number(numericId) * 1000 + Number(skinNum);
+      const communityDragonUrl = `https://raw.communitydragon.org/latest/plugins/rcp-be-lol-game-data/global/default/v1/champion-splashes/${numericId}/${skinId}.jpg`;
+      const ddragonFallbackUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_0.jpg`;
+      const imageCheck = await fetch(communityDragonUrl, { method: "HEAD" });
+      const imageUrl = imageCheck.ok ? communityDragonUrl : ddragonFallbackUrl;
       embed = {
         title: `You got **${champName}**!`,
         description: `Level: **${level}**\nSkin: **${skinName}**`,

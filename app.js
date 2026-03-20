@@ -55,7 +55,7 @@ const fetchChampion = async (user, avatar) => {
           " before requesting a new champion",
       };
     }
-    let { name, id } = await fetchChampions();
+    let { name, id, numericId } = await fetchChampions();
     const championName = name.replace(/\s/g, "");
     let championIndex = findChampionIndex(championName, userData.inventory);
 
@@ -107,6 +107,7 @@ const fetchChampion = async (user, avatar) => {
       isAllowed: true,
       name,
       id,
+      numericId,
       level: championIndex === -1 ? 1 : userData.inventory[championIndex].level,
       skinName: selectedSkin.name,
       skinNum: selectedSkin.num,
