@@ -67,16 +67,12 @@ async function handleInventoryFollowup(interaction, discordUser) {
       username: discordUser.username,
     });
 
-    const maxLength = 4096;
-    let description = inventoryText || "Your inventory is empty.";
-    if (description.length > maxLength) {
-      description = description.slice(0, maxLength - 3) + "...";
-    }
+    const championCount = inventoryText ? inventoryText.split("\n").length : 0;
+    const viewerUrl = `https://lolbotviewer.vercel.app/inventory?user=${discordUser.id}`;
     const embed = {
       title: `${discordUser.username}'s Champion Inventory`,
-      description,
+      description: `You own **${championCount}** champion${championCount !== 1 ? "s" : ""}.\n\n[View full inventory](${viewerUrl})`,
       color: 0x00cc44,
-      footer: { text: "View your full inventory at lolbotviewer.vercel.app" },
     };
 
     const patchRes = await fetch(patchUrl, {
