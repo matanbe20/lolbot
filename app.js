@@ -7,7 +7,9 @@ const getRedisClient = () => {
       host: "redis-11411.c267.us-east-1-4.ec2.cloud.redislabs.com",
       password: process.env.db_pass,
       lazyConnect: true,
-      maxRetriesPerRequest: 3,
+      connectTimeout: 5000,
+      commandTimeout: 5000,
+      maxRetriesPerRequest: 1,
     });
   }
   return redisClient;
