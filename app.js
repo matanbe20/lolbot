@@ -77,11 +77,13 @@ const fetchChampion = async (user, avatar) => {
       userData.inventory.push({
         name: championName,
         id,
+        numericId,
         level: 1,
-        skins: [{ name: selectedSkin.name, num: selectedSkin.num }], // New structure
+        skins: [{ name: selectedSkin.name, num: selectedSkin.num }],
       });
     } else {
       userData.inventory[championIndex].level += 1;
+      userData.inventory[championIndex].numericId = numericId;
       // Initialize skins array if it doesn't exist (for backward compatibility)
       if (!Array.isArray(userData.inventory[championIndex].skins)) {
         userData.inventory[championIndex].skins = [];
