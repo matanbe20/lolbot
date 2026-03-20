@@ -1,13 +1,8 @@
-const fs = require("fs");
-const util = require("util");
-const log_file = fs.createWriteStream(__dirname + "/debug.log", { flags: "w" });
-const log_stdout = process.stdout;
-
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-findChampionIndex = (champion, inventory = []) => {
+const findChampionIndex = (champion, inventory = []) => {
   for (let i = 0; i < inventory.length; i++) {
     if (inventory[i].name === champion) {
       return i;
@@ -35,27 +30,4 @@ function parseMillisecondsIntoReadableTime(milliseconds) {
   return "**" + h + " hours, " + m + " minutes & " + s + " seconds**";
 }
 
-function getTime() {
-  const currentdate = new Date();
-  const datetime =
-    currentdate.getDate() +
-    "/" +
-    (currentdate.getMonth() + 1) +
-    "/" +
-    currentdate.getFullYear() +
-    " @ " +
-    currentdate.getHours() +
-    ":" +
-    currentdate.getMinutes() +
-    ":" +
-    currentdate.getSeconds();
-
-  return datetime;
-}
-
-console.log = function (d) {
-  log_file.write(getTime() + " - " + util.format(d) + "\n");
-  log_stdout.write(getTime() + " - " + util.format(d) + "\n");
-};
-
-module.exports = { randomInteger, parseMillisecondsIntoReadableTime };
+module.exports = { randomInteger, parseMillisecondsIntoReadableTime, findChampionIndex };
