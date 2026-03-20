@@ -18,7 +18,7 @@ const getRedisClient = () => {
 const { fetchChampions, fetchChampionDetails } = require("./repository");
 const { parseMillisecondsIntoReadableTime, randomInteger, findChampionIndex } = require("./utils");
 const USERS_LIST = "users";
-const HOURS = 3;
+const HOURS = 1;
 const WAIT_TIME = 1000 * 60 * 60 * HOURS;
 
 const getUserData = async (user, usersList = {}) => {
