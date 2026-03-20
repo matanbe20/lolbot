@@ -55,7 +55,7 @@ const fetchChampion = async (user, avatar) => {
           " before requesting a new champion",
       };
     }
-    let { name, id, numericId } = await fetchChampions();
+    let { name, id } = await fetchChampions();
     const championName = name.replace(/\s/g, "");
     let championIndex = findChampionIndex(championName, userData.inventory);
 
@@ -77,13 +77,11 @@ const fetchChampion = async (user, avatar) => {
       userData.inventory.push({
         name: championName,
         id,
-        numericId,
         level: 1,
         skins: [{ name: selectedSkin.name, num: selectedSkin.num }],
       });
     } else {
       userData.inventory[championIndex].level += 1;
-      userData.inventory[championIndex].numericId = numericId;
       // Initialize skins array if it doesn't exist (for backward compatibility)
       if (!Array.isArray(userData.inventory[championIndex].skins)) {
         userData.inventory[championIndex].skins = [];
@@ -109,7 +107,6 @@ const fetchChampion = async (user, avatar) => {
       isAllowed: true,
       name,
       id,
-      numericId,
       level: championIndex === -1 ? 1 : userData.inventory[championIndex].level,
       skinName: selectedSkin.name,
       skinNum: selectedSkin.num,

@@ -25,7 +25,6 @@ const fetchChampions = async () => {
     return {
       name: champions[key].name,
       id: key,
-      numericId: champions[key].key, // numeric ID used by CommunityDragon
     };
   });
 
