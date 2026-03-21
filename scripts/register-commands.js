@@ -19,11 +19,15 @@ if (!APPLICATION_ID || !TOKEN) {
 const commands = [
   {
     name: "champion",
-    description: "Get a random League of Legends champion (3-hour cooldown)",
+    description: "Get a random League of Legends champion (1-hour cooldown)",
   },
   {
     name: "inventory",
     description: "View your champion inventory",
+  },
+  {
+    name: "leaderboard",
+    description: "Show the top 10 players by champion count",
   },
 ];
 

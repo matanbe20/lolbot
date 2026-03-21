@@ -1,6 +1,6 @@
 const { InteractionType, InteractionResponseType, verifyKey } = require("discord-interactions");
 const { waitUntil } = require("@vercel/functions");
-const { fetchChampion, getInventory } = require("../app");
+const { fetchChampion, getInventory, getLeaderboard } = require("../app");
 
 module.exports.config = { api: { bodyParser: false } };
 
@@ -92,6 +92,41 @@ async function handleInventoryFollowup(interaction, discordUser) {
   }
 }
 
+async function handleLeaderboardFollowup(interaction) {
+  const patchUrl = `https://discord.com/api/v10/webhooks/${process.env.DISCORD_APPLICATION_ID}/${interaction.token}/messages/@original`;
+
+  try {
+    const top10 = await getLeaderboard();
+    const medals = ["🥇", "🥈", "🥉"];
+    const description = top10
+      .map((user, i) => {
+        const medal = medals[i] || `**${i + 1}.**`;
+        return `${medal} **${user.username ?? "Unknown"}** — ${user.count} champions`;
+      })
+      .join("\n");
+
+    const embed = {
+      title: "🏆 Champion Leaderboard",
+      description,
+      color: 0xffd700,
+      footer: { text: "View full leaderboard at lolbotviewer.vercel.app" },
+    };
+
+    await fetch(patchUrl, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [embed] }),
+    });
+  } catch (err) {
+    console.error("Error in leaderboard followup:", err);
+    await fetch(patchUrl, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ embeds: [{ description: "An error occurred.", color: 0xff0000 }] }),
+    });
+  }
+}
+
 module.exports = async function handler(req, res) {
   if (req.method !== "POST") {
     return res.status(405).end("Method Not Allowed");
@@ -126,6 +161,11 @@ module.exports = async function handler(req, res) {
 
     if (name === "inventory") {
       waitUntil(handleInventoryFollowup(interaction, discordUser));
+      return res.status(200).json({ type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE });
+    }
+
+    if (name === "leaderboard") {
+      waitUntil(handleLeaderboardFollowup(interaction));
       return res.status(200).json({ type: InteractionResponseType.DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE });
     }
   }

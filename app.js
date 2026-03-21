@@ -137,7 +137,17 @@ const getInventory = async (user) => {
   }
 };
 
+const getLeaderboard = async () => {
+  const res = await fetch("https://lolbotviewer.vercel.app/api/getAll");
+  const users = await res.json();
+  return Object.entries(users)
+    .map(([id, data]) => ({ id, username: data.username, count: data.inventory?.length || 0 }))
+    .sort((a, b) => b.count - a.count)
+    .slice(0, 10);
+};
+
 module.exports = {
   fetchChampion,
   getInventory,
+  getLeaderboard,
 };
