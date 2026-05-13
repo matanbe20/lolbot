@@ -22,27 +22,38 @@ async function handleChampionFollowup(interaction, discordUser, avatarUrl) {
       avatarUrl
     );
 
-    let embed;
+    let embeds;
     if (!result || !result.isAllowed) {
-      embed = {
+      embeds = [{
         description: result?.reason || "Something went wrong. Please try again.",
         color: 0xff0000,
-      };
+      }];
     } else {
-      const { name: champName, id: champId, level, skinName, skinNum } = result;
-      const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champId}_${skinNum}.jpg`;
-      embed = {
-        title: `You got **${champName}**!`,
-        description: `Level: **${level}**\nSkin: **${skinName}**`,
-        color: 0x0099ff,
-        image: { url: imageUrl },
-      };
+      const { champions } = result;
+      const isMulti = champions.length > 1;
+      embeds = champions.map((champ, i) => {
+        const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champ.id}_${champ.skinNum}.jpg`;
+        let title;
+        if (!isMulti) {
+          title = `You got **${champ.name}**!`;
+        } else if (i === 0) {
+          title = champions.length === 3 ? "✨ Triple Pull!" : "🎉 Double Pull!";
+        } else {
+          title = `Champion ${i + 1}`;
+        }
+        return {
+          title,
+          description: `**${champ.name}**\nLevel: **${champ.level}**\nSkin: **${champ.skinName}**`,
+          color: 0x0099ff,
+          image: { url: imageUrl },
+        };
+      });
     }
 
     const patchRes = await fetch(patchUrl, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ embeds: [embed] }),
+      body: JSON.stringify({ embeds }),
     });
     if (!patchRes.ok) {
       console.error("Discord PATCH failed:", patchRes.status, await patchRes.text());
@@ -101,7 +112,7 @@ async function handleLeaderboardFollowup(interaction) {
     const description = top10
       .map((user, i) => {
         const medal = medals[i] || `**${i + 1}.**`;
-        return `${medal} **${user.username ?? "Unknown"}** — ${user.count} champions`;
+        return `${medal} **${user.username ?? "Unknown"}** — ${user.count} champions (${user.totalPulled} total pulls)`;
       })
       .join("\n");
 

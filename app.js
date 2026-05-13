@@ -55,48 +55,65 @@ const fetchChampion = async (user, avatar) => {
           " before requesting a new champion",
       };
     }
-    let { name, id } = await fetchChampions();
-    const championName = name.replace(/\s/g, "");
-    let championIndex = findChampionIndex(championName, userData.inventory);
+    const roll = Math.random() * 100;
+    const pullCount = roll < 1 ? 3 : roll < 6 ? 2 : 1;
 
-    let skins = [];
-    try {
-      skins = await fetchChampionDetails(id);
-    } catch (error) {
-      console.error("Failed to fetch champion skins:", error);
-    }
+    const pickChampion = async () => {
+      let { name, id } = await fetchChampions();
+      const championName = name.replace(/\s/g, "");
+      let championIndex = findChampionIndex(championName, userData.inventory);
 
-    let selectedSkin = { name: "Default", num: 0 }; // Default skin
+      let skins = [];
+      try {
+        skins = await fetchChampionDetails(id);
+      } catch (error) {
+        console.error("Failed to fetch champion skins:", error);
+      }
 
-    const trueSkins = skins ? skins.filter(s => !s.parentSkin && s.num !== 0) : [];
-    if (trueSkins.length > 0) {
-      const randomSkinIndex = randomInteger(0, trueSkins.length - 1);
-      selectedSkin = trueSkins[randomSkinIndex];
-    }
+      let selectedSkin = { name: "Default", num: 0 };
 
-    if (championIndex === -1) {
-      userData.inventory.push({
-        name: championName,
+      const trueSkins = skins ? skins.filter(s => !s.parentSkin && s.num !== 0) : [];
+      if (trueSkins.length > 0) {
+        const randomSkinIndex = randomInteger(0, trueSkins.length - 1);
+        selectedSkin = trueSkins[randomSkinIndex];
+      }
+
+      if (championIndex === -1) {
+        userData.inventory.push({
+          name: championName,
+          id,
+          level: 1,
+          skins: [{ name: selectedSkin.name, num: selectedSkin.num }],
+        });
+      } else {
+        userData.inventory[championIndex].level += 1;
+        if (!Array.isArray(userData.inventory[championIndex].skins)) {
+          userData.inventory[championIndex].skins = [];
+        }
+        const skinExists = userData.inventory[championIndex].skins.some(skin => skin.num === selectedSkin.num);
+        if (!skinExists) {
+          userData.inventory[championIndex].skins.push({ name: selectedSkin.name, num: selectedSkin.num });
+        }
+        if (userData.inventory[championIndex].hasOwnProperty('skin')) {
+          delete userData.inventory[championIndex].skin;
+        }
+      }
+
+      championIndex = findChampionIndex(championName, userData.inventory);
+      return {
+        name,
         id,
-        level: 1,
-        skins: [{ name: selectedSkin.name, num: selectedSkin.num }],
-      });
-    } else {
-      userData.inventory[championIndex].level += 1;
-      // Initialize skins array if it doesn't exist (for backward compatibility)
-      if (!Array.isArray(userData.inventory[championIndex].skins)) {
-        userData.inventory[championIndex].skins = [];
-      }
-      // Check if the selected skin already exists
-      const skinExists = userData.inventory[championIndex].skins.some(skin => skin.num === selectedSkin.num);
-      if (!skinExists) {
-        userData.inventory[championIndex].skins.push({ name: selectedSkin.name, num: selectedSkin.num });
-      }
-      // Remove old .skin property if it exists (optional cleanup, good for consistency)
-      if (userData.inventory[championIndex].hasOwnProperty('skin')) {
-        delete userData.inventory[championIndex].skin;
-      }
+        level: userData.inventory[championIndex].level,
+        skinName: selectedSkin.name,
+        skinNum: selectedSkin.num,
+      };
+    };
+
+    const champions = [];
+    for (let i = 0; i < pullCount; i++) {
+      champions.push(await pickChampion());
     }
+
     userData.lastRequestDate = new Date();
     userData.avatarUrl = avatar;
     userData.username = user.username;
@@ -106,11 +123,7 @@ const fetchChampion = async (user, avatar) => {
     });
     return {
       isAllowed: true,
-      name,
-      id,
-      level: championIndex === -1 ? 1 : userData.inventory[championIndex].level,
-      skinName: selectedSkin.name,
-      skinNum: selectedSkin.num,
+      champions,
     };
   } catch (e) {
     console.error("Error while fetchChampion", JSON.stringify(e));
@@ -141,8 +154,13 @@ const getLeaderboard = async () => {
   const res = await fetch("https://lolbotviewer.vercel.app/api/getAll");
   const users = await res.json();
   return Object.entries(users)
-    .map(([id, data]) => ({ id, username: data.username, count: data.inventory?.length || 0 }))
-    .sort((a, b) => b.count - a.count)
+    .map(([id, data]) => ({
+      id,
+      username: data.username,
+      count: data.inventory?.length || 0,
+      totalPulled: data.inventory?.reduce((sum, c) => sum + (c.level || 1), 0) || 0,
+    }))
+    .sort((a, b) => b.count - a.count || b.totalPulled - a.totalPulled)
     .slice(0, 10);
 };
 
